@@ -1,8 +1,9 @@
 # app.py
 
-
+import logging
 import pandas as pd
 import numpy as np
+import uvicorn
 from fastapi import FastAPI
 from functions import developer
 from functions import userdata
@@ -11,6 +12,17 @@ from functions import best_developer_year
 from functions import developer_reviews_analysis
 
 app = FastAPI()
+
+
+# Configurar logging
+logging.basicConfig(level=logging.INFO)
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=10000, reload=True)
 
 
 @app.get("/developer/{desarrolladora}")
