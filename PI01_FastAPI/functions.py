@@ -1,7 +1,6 @@
 # functions.py
 import pandas as pd
 import numpy as np
-
 def developer(desarrollador: str):
     
     #Levanto los datos
