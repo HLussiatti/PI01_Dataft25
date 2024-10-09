@@ -38,6 +38,8 @@ Tener un MVP (Minimum Viable Product) para el cierre del proyecto!
     - El resultado de las funciones tiene que ser un json para que funcione el framework de FastAPI por lo que se hicieron algunas modificaciones en fuctions.py
 
 
+pytz==2024.1 eliminado
+
 
 
 4. Deploymet
