@@ -50,6 +50,8 @@ Tener un MVP (Minimum Viable Product) para el cierre del proyecto!
 pytz==2024.1 eliminado
 python-dateutil==2.9.0.post0
 pyparsing==3.1.2
+Pygments==2.17.2
+pydantic_core==2.23.4
 Render utiliza "/" en lugar de "\\"
 
 
