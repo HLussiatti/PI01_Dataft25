@@ -43,9 +43,9 @@ def developer(desarrollador: str):
 def userdata(user_id: str):
 
     #Levanto los datos
-    df_steam_games = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\steam_games_dep_reducido.parquet', columns=['item_id','price'])
-    df_reviews = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\user_reviews_NLP.parquet', columns=['user_id','item_id','review','recommend'])
-    df_user_items = pd.read_parquet('..\\datasets\\2. Depurado\\users_items_depurado.parquet', columns=['user_id','item_id'])
+    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet', columns=['item_id','price'])
+    df_reviews = pd.read_parquet('../datasets/3. Depurado y Reducido/user_reviews_NLP.parquet', columns=['user_id','item_id','review','recommend'])
+    df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet', columns=['user_id','item_id'])
 
     # Me fijo que exista user_id en df_user_items
     if user_id not in df_user_items['user_id'].values:
