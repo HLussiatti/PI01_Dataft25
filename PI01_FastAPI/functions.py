@@ -4,7 +4,7 @@ import numpy as np
 def developer(desarrollador: str):
     
     #Levanto los datos
-    df_steam_games = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\steam_games_dep_reducido.parquet')
+    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet')
 
     # Verifico si el desarrollador existe en el DataFrame
     if desarrollador.lower() not in df_steam_games['developer'].str.lower().values:
@@ -40,9 +40,9 @@ def developer(desarrollador: str):
 def userdata(user_id: str):
 
     #Levanto los datos
-    df_steam_games = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\steam_games_dep_reducido.parquet')
-    df_reviews = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\user_reviews_NLP.parquet')
-    df_user_items = pd.read_parquet('..\\datasets\\2. Depurado\\users_items_depurado.parquet')
+    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet')
+    df_reviews = pd.read_parquet('../datasets/3. Depurado y Reducido/user_reviews_NLP.parquet')
+    df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet')
 
     # Me fijo que exista user_id en df_user_items
     if user_id not in df_user_items['user_id'].values:
@@ -99,8 +99,8 @@ def userdata(user_id: str):
 
 def UserForGenre(genero: str):
     # Levantar los datos
-    df_steam_games = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\steam_games_dep_reducido.parquet')
-    df_user_items = pd.read_parquet('..\\datasets\\2. Depurado\\users_items_depurado.parquet') 
+    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet')
+    df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet') 
 
     # Filtro los juegos por género - genre es un array dentro del DF.
     juegos_genero = df_steam_games[df_steam_games['genres'].apply(lambda x: genero in x if x is not None else False)]
@@ -135,8 +135,8 @@ def UserForGenre(genero: str):
 
 def best_developer_year(año: int):
     #Levanto los datos
-    df_steam_games = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\steam_games_dep_reducido.parquet')
-    df_reviews = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\user_reviews_NLP.parquet')
+    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet')
+    df_reviews = pd.read_parquet('../datasets/3. Depurado y Reducido/user_reviews_NLP.parquet')
     
     # Filtrar los juegos por año
     juegos_año = df_steam_games[df_steam_games['year'] == año]
@@ -177,8 +177,8 @@ def best_developer_year(año: int):
 def developer_reviews_analysis(desarrolladora: str):
 
     #Levanto los datos
-    df_steam_games = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\steam_games_dep_reducido.parquet')
-    df_reviews = pd.read_parquet('..\\datasets\\3. Depurado y Reducido\\user_reviews_NLP.parquet')
+    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido\steam_games_dep_reducido.parquet')
+    df_reviews = pd.read_parquet('../datasets/3. Depurado y Reducido/user_reviews_NLP.parquet')
     
     
     # Filtrar los juegos del desarrollador especificado. Por las dudas lo paso a minúsculas
