@@ -5,36 +5,39 @@ def developer(desarrollador: str):
     
     #Levanto los datos
     df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet')
+    if  df_steam_games.empty:
+        return "df vacio"
+    else:
 
-    # Verifico si el desarrollador existe en el DataFrame
-    if desarrollador.lower() not in df_steam_games['developer'].str.lower().values:
-        return f"El desarrollador '{desarrollador}' no se encuentra en el dataset."
+        # Verifico si el desarrollador existe en el DataFrame
+        if desarrollador.lower() not in df_steam_games['developer'].str.lower().values:
+            return f"El desarrollador '{desarrollador}' no se encuentra en el dataset."
 
-    # Filtro por desarrollador
-    df_filtered = df_steam_games[df_steam_games['developer'].str.lower()  == desarrollador.lower()]
+        # Filtro por desarrollador
+        df_filtered = df_steam_games[df_steam_games['developer'].str.lower()  == desarrollador.lower()]
 
-    # Obtenemos un DF del desarrollador con la cantidad de items por año
-    total_items_per_year = df_filtered.groupby('year').size().reset_index(name='total_items')
+        # Obtenemos un DF del desarrollador con la cantidad de items por año
+        total_items_per_year = df_filtered.groupby('year').size().reset_index(name='total_items')
 
-    # Obtenemos un DF con la cantidad de items "Free" or año
-    free_items_per_year = df_filtered[df_filtered['free'] == True].groupby('year').size().reset_index(name='free_items')
+        # Obtenemos un DF con la cantidad de items "Free" or año
+        free_items_per_year = df_filtered[df_filtered['free'] == True].groupby('year').size().reset_index(name='free_items')
 
-    # Left Join de los DF con "year" como clave.
-    result = pd.merge(total_items_per_year, free_items_per_year, on='year', how='left').fillna(0)
+        # Left Join de los DF con "year" como clave.
+        result = pd.merge(total_items_per_year, free_items_per_year, on='year', how='left').fillna(0)
 
-    # Calculamos el porcentaje de contenido gratuito
-    result['percentage_free'] = (result['free_items'] / result['total_items']) * 100
+        # Calculamos el porcentaje de contenido gratuito
+        result['percentage_free'] = (result['free_items'] / result['total_items']) * 100
 
-    # Le doy formato a las columnas del DF
-    result['year'] = result['year'].astype(int)  # Asegúrate que sea entero
-    result['total_items'] = result['total_items'].astype(int)  # Asegúrate que sea entero
-    result['free_items'] = result['free_items'].astype(int)    # Asegúrate que sea entero
-    result['percentage_free'] = result['percentage_free'].map('{:.2f}%'.format)  # Formato de porcentaje
+        # Le doy formato a las columnas del DF
+        result['year'] = result['year'].astype(int)  # Asegúrate que sea entero
+        result['total_items'] = result['total_items'].astype(int)  # Asegúrate que sea entero
+        result['free_items'] = result['free_items'].astype(int)    # Asegúrate que sea entero
+        result['percentage_free'] = result['percentage_free'].map('{:.2f}%'.format)  # Formato de porcentaje
 
-    # Convertir el DataFrame a una lista de diccionarios (serializable)
-    result_json = result.to_dict(orient="records")
+        # Convertir el DataFrame a una lista de diccionarios (serializable)
+        result_json = result.to_dict(orient="records")
 
-    return result_json
+        return result_json
 
 
 def userdata(user_id: str):

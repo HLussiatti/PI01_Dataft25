@@ -61,13 +61,12 @@ def read_best_developer_year(anio: int):
     """
     resultado = best_developer_year(anio)
     return resultado
-    #return {"message": "Hello World"}
 
 @app.get("/developer_reviews_analysis/{desarrolladora}")
 def read_developer_reviews_analysis(desarrolladora: str):
     """
     Endpoint para obtener un diccionario con el nombre del desarrollador 
-    como llave y una lista con la cantidad total +de registros de reseñas de 
+    como llave y una lista con la cantidad total de registros de reseñas de 
     suarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo..
     """
     resultado = developer_reviews_analysis(desarrolladora)

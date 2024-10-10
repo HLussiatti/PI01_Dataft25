@@ -5,7 +5,7 @@ Tener un MVP (Minimum Viable Product) para el cierre del proyecto!
 
 
 # TAREAS REALIZADAS:
-1. Ingesta de datos
+**1. Ingesta de datos**
 
     - La carga de datos se desarrolló en el notebook: "1. ExtractData."
     - La ingesta se realizó de forma directa, desanidando los datos necesarios y tratando de optimizar la carga directa manejando los archivos como diccionarios y luego cargandolos en un DataFrame. 
@@ -14,7 +14,7 @@ Tener un MVP (Minimum Viable Product) para el cierre del proyecto!
 
     - En esta instancia obtuve los archivos guardados en datasets/1. Extracción: steam_games.parquet, user_reviews.parquet y users_items.parquet  
 
-2. Tratamiento de datos (duplicados, outliers, nulos)
+**2. Tratamiento de datos (duplicados, outliers, nulos)**
 
     - Se realizó un análisis básico de duplicados, faltantes y outliers en el notebook "2. TransformData"
     - En esta instancia obtuve los archivos guardados en datasets/2. Depurado: steam_games_depurado.parquet, user_reviews_depurado.parquet y users_items_depurado.parquet  
@@ -35,11 +35,22 @@ Tener un MVP (Minimum Viable Product) para el cierre del proyecto!
     
     - Es necesario instalar fastapi y uvicorn
     - Creo una estructura de proyecto en PI01_FastAPI
-    - El resultado de las funciones tiene que ser un json para que funcione el framework de FastAPI por lo que se hicieron algunas modificaciones en fuctions.py
+    - Se probó todo de forma local realizando las modificaciones necesarias a los archivos, como por ejemplo:
+        - El resultado de las funciones tiene que ser un json para que funcione el framework de FastAPI por lo que se hicieron algunas modificaciones en fuctions.py
+    
+
+6. Deploymet en Render
+
+    - En primer lguar se elaboró el archivo de requirements.txt con las librerías mínimas necesarias para el funcionamiento de la API.
+        - Si bien este archivo inicialmente se elaboró a partir del la creación de un entorno virtual, es mejor hacerlo manualmente utilizando sólo las librerías mínimas necesarias.   
+    - Luego se creó una cuenta en Redener y se creó el siguiente entorno: https://pi01-dataft25.onrender.com/
+    -  
 
 
 pytz==2024.1 eliminado
-
+python-dateutil==2.9.0.post0
+pyparsing==3.1.2
+Render utiliza "/" en lugar de "\\"
 
 
 4. Deploymet
