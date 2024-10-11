@@ -180,7 +180,7 @@ def best_developer_year(año: int):
 def developer_reviews_analysis(desarrolladora: str):
 
     #Levanto los datos
-    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido\steam_games_dep_reducido.parquet',columns=['item_id','developer'])
+    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet',columns=['item_id','developer'])
     df_reviews = pd.read_parquet('../datasets/3. Depurado y Reducido/user_reviews_NLP.parquet',columns=['item_id','sentiment_value'])
     
     
