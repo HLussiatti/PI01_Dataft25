@@ -4,7 +4,7 @@ import numpy as np
 def developer(desarrollador: str):
     
     #Levanto los datos
-    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet', columns=['developer','year','free'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['developer','year','free'])
     if  df_steam_games.empty:
         return "df vacio"
     else:
@@ -43,8 +43,8 @@ def developer(desarrollador: str):
 def userdata(user_id: str):
 
     #Levanto los datos
-    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet', columns=['item_id','price'])
-    df_reviews = pd.read_parquet('../datasets/3. Depurado y Reducido/user_reviews_NLP.parquet', columns=['user_id','item_id','review','recommend'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['item_id','price'])
+    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP.parquet', columns=['user_id','item_id','review','recommend'])
     df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet', columns=['user_id','item_id'])
 
     # Me fijo que exista user_id en df_user_items
@@ -102,7 +102,7 @@ def userdata(user_id: str):
 
 def UserForGenre(genero: str):
     # Levantar los datos
-    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet', columns=['genres','item_id','year'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['genres','item_id','year'])
     df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet', columns=['user_id','item_id','playtime_forever']) 
 
     # Filtro los juegos por género - genre es un array dentro del DF.
@@ -138,8 +138,8 @@ def UserForGenre(genero: str):
 
 def best_developer_year(año: int):
     #Levanto los datos
-    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet', columns=['item_id','year','developer'])
-    df_reviews = pd.read_parquet('../datasets/3. Depurado y Reducido/user_reviews_NLP.parquet', columns=['user_id','item_id','recommend','sentiment_value'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['item_id','year','developer'])
+    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP.parquet', columns=['user_id','item_id','recommend','sentiment_value'])
     
     # Filtrar los juegos por año
     juegos_año = df_steam_games[df_steam_games['year'] == año]
@@ -180,8 +180,8 @@ def best_developer_year(año: int):
 def developer_reviews_analysis(desarrolladora: str):
 
     #Levanto los datos
-    df_steam_games = pd.read_parquet('../datasets/3. Depurado y Reducido/steam_games_dep_reducido.parquet',columns=['item_id','developer'])
-    df_reviews = pd.read_parquet('../datasets/3. Depurado y Reducido/user_reviews_NLP.parquet',columns=['item_id','sentiment_value'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet',columns=['item_id','developer'])
+    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP.parquet',columns=['item_id','sentiment_value'])
     
     
     # Filtrar los juegos del desarrollador especificado. Por las dudas lo paso a minúsculas
