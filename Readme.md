@@ -1,4 +1,8 @@
-# CONSINGNA:
+# <h1 align=center> **PROYECTO INDIVIDUAL Nº1** </h1>
+# <h2 align=center>**Sistema de recomendación de Juegos de Steam**</h2>
+
+
+# **CONSINGNA:**
 Steam pide que te encargues de crear un sistema de recomendación de videojuegos para usuarios.
 
 Tener un MVP (Minimum Viable Product) para el cierre del proyecto! 
@@ -21,6 +25,8 @@ Tener un MVP (Minimum Viable Product) para el cierre del proyecto!
     - En esta instancia se obtuvieron los archivos guardados en datasets/2. Depurado: steam_games_depurado.parquet, user_reviews_depurado.parquet y users_items_depurado.parquet
     
 
+    VER SI PUEDO AGREGAR COLUMNAS CON LAS MODIFICACIONES REALIZDAS SOBRE EL DF
+
 **3. Se elabora el NLP**
 
     - Es necesario elaborar el análisis de Lenguaje Natural para poder usar el resultado en la API. Se desarrolló en la notebook "3. NLP"
@@ -39,6 +45,9 @@ Tener un MVP (Minimum Viable Product) para el cierre del proyecto!
     - Se creó una estructura de proyecto en PI01_FastAPI
     - Se probó todo de forma local realizando las modificaciones necesarias a los archivos, como por ejemplo:
         - El resultado de las funciones tiene que ser un json para que funcione el framework de FastAPI por lo que se hicieron algunas modificaciones en fuctions.py
+
+
+        RECORDAR TRANSFORAR MINUTOS A HORAS
     
 
 **6. Deploymet en Render**
@@ -52,9 +61,19 @@ Tener un MVP (Minimum Viable Product) para el cierre del proyecto!
             - Se utiliza año como "anio"
             - Se utilza la librería unquote para decodificar casos como por ejemplo, nombres de desarrolladores con espacios.
 
-**7. Modelado**
+**7. EDA**
+    - Se realizó el análisis de las variables más relevantes para el desarrollo del modelo ML.
+        - Se eliminaron algunos valores de género que no era descriptivos (Free To Play, Early Access)
+    - En esta intancia se agregaron algunas métricas al archivo steam_games con el objetivo de buscar patrones:
+        - Se agregaron métricas de recomendaciones
+        - Se agregaron métricas de valorización de reviews del NLP
+    - No se detectaron relaciones o correlaciones siginificativas entre los datos de ningún tipo.
+    - Esto puede deberse a la mala calidad de los datos.
+    - Por este motivo el modelo de basará fundamentalmente en las caracterísiticas de los juegos: géneros, especificaciones y tags.
+    - 
 
-
+**8. ML**
+    - Tomando los datos
 
 5. ML
 6. EDA y Entrenamiento

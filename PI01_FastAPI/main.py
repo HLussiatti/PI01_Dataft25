@@ -19,6 +19,7 @@ def read_developer_reviews(desarrolladora: str):
     """
     Endpoint para obtener la cantidad de items y porcentaje 
     de contenido Free por año según empresa desarrolladora.
+    :param desarrolladora: Es la desarrolladora del Juego .
     """
     # Cuando paso una desarrolladora que tiene algún espacio en el medio, lo parsea.
     # Ejemplo: “Bohemia Interactive” pasa a ser "Bohemia%20Interactive".
@@ -33,6 +34,7 @@ def read_userdata(user_id: str):
     """
     Endpoint para obtener la cantidad de dinero gastado por el usuario, 
     el porcentaje de recomendación en base a reviews.recommend y cantidad de items.
+    :param user_id: Es el identificador único del usuario. 
     """
     resultado = userdata(unquote(user_id))
     return resultado

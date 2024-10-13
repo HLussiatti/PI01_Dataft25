@@ -1,43 +1,54 @@
 # functions.py
 import pandas as pd
 import numpy as np
+import gc
+
+def release_resources(*dfs):
+    """
+    Elimina las variables pasadas como argumento y fuerza la recolección de basura.
+    :param dfs: DataFranes cargadis a eliminar.
+    """
+    for var in dfs:
+        del var
+    gc.collect()
+
+
 def developer(desarrollador: str):
     
     #Levanto los datos
     df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['developer','year','free'])
-    if  df_steam_games.empty:
-        return "df vacio"
-    else:
 
-        # Verifico si el desarrollador existe en el DataFrame
-        if desarrollador.lower() not in df_steam_games['developer'].str.lower().values:
-            return f"El desarrollador '{desarrollador}' no se encuentra en el dataset."
+    # Verifico si el desarrollador existe en el DataFrame
+    if desarrollador.lower() not in df_steam_games['developer'].str.lower().values:
+        release_resources(df_steam_games)
+        return f"El desarrollador '{desarrollador}' no se encuentra en el dataset."
 
-        # Filtro por desarrollador
-        df_filtered = df_steam_games[df_steam_games['developer'].str.lower()  == desarrollador.lower()]
+    # Filtro por desarrollador
+    df_filtered = df_steam_games[df_steam_games['developer'].str.lower()  == desarrollador.lower()]
 
-        # Obtenemos un DF del desarrollador con la cantidad de items por año
-        total_items_per_year = df_filtered.groupby('year').size().reset_index(name='total_items')
+    # Obtenemos un DF del desarrollador con la cantidad de items por año
+    total_items_per_year = df_filtered.groupby('year').size().reset_index(name='total_items')
 
-        # Obtenemos un DF con la cantidad de items "Free" or año
-        free_items_per_year = df_filtered[df_filtered['free'] == True].groupby('year').size().reset_index(name='free_items')
+    # Obtenemos un DF con la cantidad de items "Free" or año
+    free_items_per_year = df_filtered[df_filtered['free'] == True].groupby('year').size().reset_index(name='free_items')
 
-        # Left Join de los DF con "year" como clave.
-        result = pd.merge(total_items_per_year, free_items_per_year, on='year', how='left').fillna(0)
+    # Left Join de los DF con "year" como clave.
+    result = pd.merge(total_items_per_year, free_items_per_year, on='year', how='left').fillna(0)
 
-        # Calculamos el porcentaje de contenido gratuito
-        result['percentage_free'] = (result['free_items'] / result['total_items']) * 100
+    # Calculamos el porcentaje de contenido gratuito
+    result['percentage_free'] = (result['free_items'] / result['total_items']) * 100
 
-        # Le doy formato a las columnas del DF
-        result['year'] = result['year'].astype(int)  # Asegúrate que sea entero
-        result['total_items'] = result['total_items'].astype(int)  # Asegúrate que sea entero
-        result['free_items'] = result['free_items'].astype(int)    # Asegúrate que sea entero
-        result['percentage_free'] = result['percentage_free'].map('{:.2f}%'.format)  # Formato de porcentaje
+    # Le doy formato a las columnas del DF
+    result['year'] = result['year'].astype(int)  # Asegúrate que sea entero
+    result['total_items'] = result['total_items'].astype(int)  # Asegúrate que sea entero
+    result['free_items'] = result['free_items'].astype(int)    # Asegúrate que sea entero
+    result['percentage_free'] = result['percentage_free'].map('{:.2f}%'.format)  # Formato de porcentaje
 
-        # Convertir el DataFrame a una lista de diccionarios (serializable)
-        result_json = result.to_dict(orient="records")
+    # Convertir el DataFrame a una lista de diccionarios (serializable)
+    result_json = result.to_dict(orient="records")
 
-        return result_json
+    release_resources(df_steam_games)
+    return result_json
 
 
 def userdata(user_id: str):
@@ -49,7 +60,8 @@ def userdata(user_id: str):
 
     # Me fijo que exista user_id en df_user_items
     if user_id not in df_user_items['user_id'].values:
-        return print(f"El user_id {user_id} no se encuentra en user_items.")
+        release_resources(df_steam_games, df_reviews,df_user_items)
+        return f"El user_id {user_id} no se encuentra en user_items."
 
     # Filtrar por el user_id en los dataframe
     user_items = df_user_items[df_user_items['user_id'] == user_id]
@@ -57,7 +69,8 @@ def userdata(user_id: str):
 
     # Me fijo que haya items_id en user_items con el user_id
     if user_items.empty:
-        print(f"No se encontraron items para el user_id {user_id} en user_items.")
+        release_resources(df_steam_games, df_reviews,df_user_items)
+        return f"No se encontraron items para el user_id {user_id} en user_items."
     
     else:
         
@@ -65,6 +78,7 @@ def userdata(user_id: str):
         items = df_steam_games[df_steam_games['item_id'].isin(user_items['item_id'])]
 
         if items.empty:
+            release_resources(df_steam_games, df_reviews,df_user_items)
             return print(f"No se encontraron items en steam_games para el user_id {user_id}.")
         else:
             
@@ -96,7 +110,8 @@ def userdata(user_id: str):
                 "% de recomendación": f"{percentage_recommendation:.2f}%",
                 "cantidad de items": item_count
             }
-
+            
+            release_resources(df_steam_games, df_reviews,df_user_items)
             return result
         
 
@@ -110,6 +125,7 @@ def UserForGenre(genero: str):
 
     # Verifico que el género se encuentre en genres
     if juegos_genero.empty:
+        release_resources(df_steam_games,df_user_items)
         return f"No se encontraron juegos para el género '{genero}'."
 
     # Inner Join de los datos de juegos y tiempo jugado
@@ -133,6 +149,7 @@ def UserForGenre(genero: str):
         "Horas jugadas": [{"Año": int(year), "Horas": int(hours)} for year, hours in zip(horas_por_año['year'], horas_por_año['playtime_forever'])]
     }
 
+    release_resources(df_steam_games,df_user_items)
     return resultado
 
 
@@ -146,6 +163,7 @@ def best_developer_year(año: int):
 
     # Verifico si hay juegos en el año dado
     if juegos_año.empty:
+        release_resources(df_steam_games,df_reviews)
         return f"No se encontraron juegos para el año {año}."
 
     # Filtrar las reviews recomendación "True" y reseñas "Positivas" del NLP
@@ -153,6 +171,7 @@ def best_developer_year(año: int):
 
     # Verificar si hay reseñas positivas
     if reseñas_positivas.empty:
+        release_resources(df_steam_games,df_reviews)
         return f"No se encontraron reseñas positivas para el año {año}."
 
     # Inner join de los DF con la columna item_id como id
@@ -160,6 +179,7 @@ def best_developer_year(año: int):
 
     # Verificar si hay reseñas después del merge
     if juegos_reseñas.empty:
+        release_resources(df_steam_games,df_reviews)       
         return f"No hay reseñas positivas para los juegos del año {año}."
 
     # Cuento la cantidad de recomendaciones positivas por desarrollador
@@ -173,7 +193,8 @@ def best_developer_year(año: int):
     for idx, row in enumerate(top_desarrolladores.itertuples(), start=1):
         puesto = f"Puesto {idx}"
         resultado.append({puesto: row.developer})
-
+    
+    release_resources(df_steam_games,df_reviews)    
     return resultado
 
 
@@ -189,6 +210,7 @@ def developer_reviews_analysis(desarrolladora: str):
     
     # Verifico que haya juegos para este desarrollador y sino devuelvo 0
     if juegos_desarrolladora.empty:
+        release_resources(df_steam_games,df_reviews) 
         return {desarrolladora: {'Negative': 0, 'Positive': 0}}
 
     # Obtener los item_ids de los juegos de la desarrolladora
@@ -208,5 +230,5 @@ def developer_reviews_analysis(desarrolladora: str):
             'Positive': int(total_positivas)
         }
     }
-
+    release_resources(df_steam_games,df_reviews) 
     return resultado
