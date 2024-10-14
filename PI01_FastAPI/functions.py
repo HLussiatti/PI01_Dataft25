@@ -14,7 +14,7 @@ def release_resources(*dfs):
 
 def developer(desarrollador: str):
     #Levanto los datos necesarios
-    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['developer','year','free'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet', columns=['developer','year','free'])
 
     # Verifico si el desarrollador existe en el DataFrame
     if desarrollador.lower() not in df_steam_games['developer'].str.lower().values:
@@ -52,7 +52,7 @@ def developer(desarrollador: str):
 def userdata(user_id: str):
 
     #Levanto los datos
-    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['item_id','price'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet', columns=['item_id','price'])
     df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP_Transformers.parquet', columns=['user_id','item_id','review','recommend'])
     df_user_items = pd.read_parquet('../datasets/2. Depurado/user_items_depurado.parquet', columns=['user_id','item_id'])
 
@@ -106,7 +106,7 @@ def userdata(user_id: str):
                 "Usuario": user_id,
                 "Dinero gastado": f"{total_spent} USD",
                 "% de recomendación": f"{percentage_recommendation:.2f}%",
-                "cantidad de items": item_count
+                "Cantidad de items": item_count
             }
             
             release_resources(df_steam_games, df_reviews,df_user_items)
@@ -115,7 +115,7 @@ def userdata(user_id: str):
 
 def UserForGenre(genero: str):
     # Levantar los datos
-    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['genres','item_id','year'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet', columns=['genres','item_id','year'])
     df_user_items = pd.read_parquet('../datasets/2. Depurado/user_items_depurado.parquet', columns=['user_id','item_id','playtime_forever']) 
 
     # Filtro los juegos por género - genre es un array dentro del DF.
@@ -156,7 +156,7 @@ def UserForGenre(genero: str):
 
 def best_developer_year(año: int):
     #Levanto los datos
-    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['item_id','year','developer'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet', columns=['item_id','year','developer'])
     df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP_Transformers.parquet', columns=['user_id','item_id','recommend','sentiment_value'])
     
     # Filtrar los juegos por año
@@ -202,7 +202,7 @@ def best_developer_year(año: int):
 def developer_reviews_analysis(desarrolladora: str):
 
     #Levanto los datos
-    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet',columns=['item_id','developer'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet',columns=['item_id','developer'])
     df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP_Transformers.parquet',columns=['item_id','sentiment_value'])
     
     

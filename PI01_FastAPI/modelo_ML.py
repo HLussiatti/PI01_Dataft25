@@ -18,7 +18,7 @@ def release_resources(*dfs):
 def matrix_calculation(item_id):
     
     # Cargo los datos que voy a usar.
-    df_steam_games = pd.read_parquet('..\\datasets\\2. Depurado\\steam_games_postEDA.parquet', columns=['item_id','combined'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet', columns=['item_id','combined'])
 
     # Verifico que exista el id del juego.
     if df_steam_games[df_steam_games['item_id'] == item_id].empty:
@@ -62,7 +62,7 @@ def recommend_games(item_id, n_recommendations):
     game_indices = [i[0] for i in sim_scores[:n_recommendations]]
     game_sim_scores = [i[1] for i in sim_scores]
     
-    df_steam_games = pd.read_parquet('..\\datasets\\2. Depurado\\steam_games_postEDA.parquet', columns=['title','item_id','genres','specs','tags_new','positive_ratio'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet', columns=['title','item_id','genres','specs','tags_new','positive_ratio'])
     df_steam_games.reset_index(drop=True, inplace=True)
 
     # Retornar los juegos recomendados junto con los puntajes de similitud
@@ -71,5 +71,9 @@ def recommend_games(item_id, n_recommendations):
 
     # Como puede haber varios juegos con igual puntaje, decido ordenarlos por el posiive_ratio resultante del NLP
     recommended_games = recommended_games.sort_values(by='positive_ratio', ascending=False)
+
+    # Convertir el DataFrame a una lista de diccionarios (serializable)
+    result_json = recommended_games.to_dict(orient="records")
+
     release_resources(df_steam_games)
-    return recommended_games
+    return result_json
