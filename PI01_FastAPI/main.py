@@ -124,7 +124,7 @@ def read_developer_reviews_analysis(desarrolladora: str):
     """
     Endpoint para obtener un diccionario con el nombre del desarrollador 
     como llave y una lista con la cantidad total de registros de reseñas de 
-    suarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
+    usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
 
     Parámetros:
     -----------
@@ -148,7 +148,7 @@ def read_developer_reviews_analysis(desarrolladora: str):
 def read_recommend_games(item_id: int):
     """
     Endpoint para obtener los 5 juegos recomendados ingresando el id de un juego
-    ordenados por puntaje según  matriz de similitud del coseno y 
+    ordenados por puntaje según la matriz de similitud del coseno y 
     la proporción de Reviews clasificadas como Positivas.
 
     Parámetros:

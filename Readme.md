@@ -12,7 +12,7 @@
 - Tener un MVP (Minimum Viable Product) para el cierre del proyecto! 
 
 
-### Tabla de contenido
+# TABLA DE CONTENIDO
 1. [Ingesta de datos](#1-ingesta-de-datos)
 2. [Tratamiento de datos](#2-tratamiento-de-datos)
 3. [FEATURE ENGINEERING: Análisis de Sentimiento](#3-feature-engineering-análisis-de-sentimiento)
@@ -22,6 +22,15 @@
 7. [EDA](#7-eda)
 8. [Modelo ML](#8-modelo-ml)
 9. [Resultados](#9-resultados)
+   - [9.1. Developer](#91-def-developerdesarrollador--str)
+   - [9.2. User Data](#92-def-userdatauser_id--str)
+   - [9.3. User for Genre](#93-def-userforgenregenero--str)
+   - [9.4. Best Developer Year](#94-def-best_developeryearanio--int)
+   - [9.5. Developer Reviews Analysis](#95-def-developer_reviews_analysisdesarrolladora--str)
+   - [9.6. Recommended Games](#96-def-recommended_gamesitem_id-int)
+10. [Requisitos](#requisitos)
+11. [Estructura del Proyecto](#estructura-del-proyecto)
+
 
 # **TAREAS REALIZADAS:**
 # <h3>**1. Ingesta de datos**</h3>
@@ -80,7 +89,7 @@
 
 # <h3>**4. Creación de las funciones**</h3>
 
-- Se crearon las funciones en el notebook **`"4. FastAPI"`**. Estas funciones serán las cargadas en la API.
+- Se crearon las funciones en el notebook **`"4. Funciones"`**. Estas funciones serán las cargadas en la API.
 - Se optimizaron para poder ser procesadas posteriormente en Render.
 
 # <h3>**5. FastAPI**</h3>
@@ -92,10 +101,10 @@
 
 # <h3>**6. Deploymet en Render**</h3>
 
-- En primer lguar se elaboró el archivo de requirements.txt con las librerías mínimas necesarias para el funcionamiento de la API.
+- En primer luguar se elaboró el archivo de requirements.txt con las librerías mínimas necesarias para el funcionamiento de la API.
     - Si bien este archivo inicialmente se elaboró a partir del la creación de un entorno virtual, es mejor hacerlo manualmente utilizando sólo las librerías mínimas necesarias.   
 - Luego se creó una cuenta en Redener y se creó el siguiente entorno: https://pi01-dataft25.onrender.com/
-- Se debieron adaptar las funciones creadas en el notbook **`"4. FastAPI"`** para funcionar en Render.
+- Se debieron adaptar las funciones creadas en el notbook **`"4. Funciones"`** para funcionar en Render.
     - Por ejemplo, render utiliza **`"/"`** en lugar de **`"\\"`**
     - Como la API parsea las URLs, se deben modificar algunas cosas:
         - Se utiliza año como "anio"
@@ -103,9 +112,13 @@
     - Se creó una función de eliminación de datos ya que ante muchas consultas consecutivas se caía Render.
 
 <p align="center">
-<img src="./_src/Settings_render_1.PNG"  height=300>
-<img src="./_src/Settings_render_2.PNG"  height=300>
-<img src="./_src/Settings_render_3.PNG"  height=300>
+<img src="./_src/Settings_render_1.PNG"  style="width:100%">
+</p>
+<p align="center">
+<img src="./_src/Settings_render_2.PNG"  style="width:100%">
+</p>
+<p align="center">
+<img src="./_src/Settings_render_3.PNG"  style="width:100%">
 </p>
 
 
@@ -128,60 +141,79 @@
 
 - Se elaboró el cálculo de la **`cosine_similarity`**  utilizando los valores resultatntes de combinar **`genres`**, **`specs`** y **`tags`** en **`combined`**.
 - Como puede haber varios juegos con igual puntaje según el criterio de la matriz del coseno, decido ordenarlos por el **`posiive_ratio`** resultante del NLP.
-- Se procedió a realizar el depoloy.
+- Se procedió a realizar el deploy.
 
 
 # <h3>**9. Resultados**</h3>
 - Link del deployed **[API en Render](https://pi01-dataft25.onrender.com/docs)**
 - Resultados de todas las consultas:
 
-# **- def developer(desarrollador : str) :**
+### **9.1. def developer(desarrollador : str)**
 
-    Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
+    Devuelve la cantidad de items y el porcentaje de contenido Free por año de lanzamiento del juego para la empresa desarrolladora ingresada.
 
 <p align="center">
-<img src="./_src/Render_Request_Response_1.PNG"  height=300>
+<img src="./_src/Render_Request_Response_1.PNG"  style="width:100%">
 </p>
 
-# **- def userdata(user_id : str):**
+# **9.2.  def userdata(user_id : str):**
     
-    Debe devolver cantidad de dinero gastado por el usuario, el porcentaje de recomendación en base a reviews.recommend y cantidad de items.
+    Devuelve la cantidad de dinero gastado por el usuario, el porcentaje de recomendación en base a reviews.recommend y la cantidad de items que posee el usuario.
 
 <p align="center">
-<img src="./_src/Render_Request_Response_2.PNG"  height=300>
+<img src="./_src/Render_Request_Response_2.PNG"  style="width:100%">
 </p>
 
-# **-def UserForGenre(genero : str ):** 
+# **9.3. def UserForGenre(genero : str ):** 
 
-    Debe devolver el usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
+    Deuelve el Usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
 
 <p align="center">
-<img src="./_src/Render_Request_Response_3.PNG"  height=300>
+<img src="./_src/Render_Request_Response_3.PNG"  style="width:100%">
 </p>
 
-# **- def best_developer_year(anio : int ):** 
+# **9.4. def best_developer_year(anio : int ):** 
 
-    Devuelve el top 3 de desarrolladores con juegos MÁS recomendados por usuarios para el año dado. (reviews.recommend = True y comentarios positivos)
+    Devuelve el top 3 de desarrolladores con juegos más recomendados por usuarios para el año dado. (reviews.recommend = True y comentarios positivos).
 
 <p align="center">
-<img src="./_src/Render_Request_Response_4.PNG"  height=300>
+<img src="./_src/Render_Request_Response_4.PNG"  style="width:100%">
 </p>
 
-# **- def developer_reviews_analysis( desarrolladora : str ):** 
+# **9.5. def developer_reviews_analysis( desarrolladora : str ):** 
     
-    Según el desarrollador, se devuelve un diccionario con el nombre del desarrollador como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
+    Devuelve un diccionario con el nombre del desarrollador como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
 
 
 <p align="center">
-<img src="../_src/Render_Request_Response_5.PNG"  height=300>
+<img src="./_src/Render_Request_Response_5.PNG"  style="width:100%">
 </p>
 
-# **- def recommended_games( item_id: int ):** 
+# **9.6. def recommended_games( item_id: int ):** 
     
-    Según el desarrollador, se devuelve un diccionario con el nombre del desarrollador como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
+    Devuelve los 5 juegos recomendados ingresando el id de un juego ordenados por puntaje según matriz de similitud del coseno y la proporción de Reviews clasificadas como Positivas.
 
     
 <p align="center">
-<img src="../_src/Render_Request_Response_6.jpg"  height=300>
+<img src="./_src/Render_Request_Response_6.PNG"  style="width:100%">
 </p>
 
+
+
+# <h3>**Requisitos**</h3>
+- Python 3.7 o superior
+- fastapi==0.115.0
+- padas==2.2.2
+- numpy==1.26.4
+- uvicorn==0.31.0
+- pyarrow==12.0.0
+- json5==0.9.25
+- scikit-learn==1.5.2
+
+
+# <h3>**Estructura del Proyecto**</h3>
+- `PI01_FastAPI/`: Contine los ejecutables y requiremetns para el deploy en Render.
+- `datasts/`: Contiene los archivos de datos.
+- `notebooks/`: Jupyter notebooks con el análisis.
+- `_src/`: Imágenes utilizadas en el Readme.
+- `README.md`: Documentación.
