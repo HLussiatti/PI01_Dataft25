@@ -71,9 +71,9 @@ def read_developer_reviews_analysis(desarrolladora: str):
     return result
 
 @app.get("/recommend_games/{item_id}")
-def recommend_games(item_id: int):
+def read_recommend_games(item_id: int):
     """
     Endpoint para obtener 5 juegos recomendados ingresando el id de producto.
     """
-    result = developer_reviews_analysis(unquote(item_id))
+    result = recommend_games(unquote(item_id))
     return result
