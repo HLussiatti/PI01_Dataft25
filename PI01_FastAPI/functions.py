@@ -54,7 +54,7 @@ def userdata(user_id: str):
     #Levanto los datos
     df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['item_id','price'])
     df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP_Transformers.parquet', columns=['user_id','item_id','review','recommend'])
-    df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet', columns=['user_id','item_id'])
+    df_user_items = pd.read_parquet('../datasets/2. Depurado/user_items_depurado.parquet', columns=['user_id','item_id'])
 
     # Me fijo que exista user_id en df_user_items
     if user_id not in df_user_items['user_id'].values:
@@ -116,7 +116,7 @@ def userdata(user_id: str):
 def UserForGenre(genero: str):
     # Levantar los datos
     df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['genres','item_id','year'])
-    df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet', columns=['user_id','item_id','playtime_forever']) 
+    df_user_items = pd.read_parquet('../datasets/2. Depurado/user_items_depurado.parquet', columns=['user_id','item_id','playtime_forever']) 
 
     # Filtro los juegos por género - genre es un array dentro del DF.
     games_genres = df_steam_games[df_steam_games['genres'].apply(lambda x: genero in x if x is not None else False)]

@@ -10,6 +10,9 @@ from functions import userdata
 from functions import UserForGenre
 from functions import best_developer_year
 from functions import developer_reviews_analysis
+from modelo_ML import recommend_games
+
+
 
 app = FastAPI()
 
@@ -65,4 +68,12 @@ def read_developer_reviews_analysis(desarrolladora: str):
     suarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo..
     """
     result = developer_reviews_analysis(unquote(desarrolladora))
+    return result
+
+@app.get("/recommend_games/{item_id}")
+def recommend_games(item_id: int):
+    """
+    Endpoint para obtener 5 juegos recomendados ingresando el id de producto.
+    """
+    result = developer_reviews_analysis(unquote(item_id))
     return result

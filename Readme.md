@@ -6,6 +6,16 @@
 
 # <h1 align=center>**Sistema de recomendación de Juegos de Steam**</h1>
 
+### Tabla de contenido
+1. [Consigna](#CONSINGNA)
+2. [1. Ingesta de datos](#1. Ingesta de datos)
+3. [2. Tratamiento de datos](#2. Tratamiento de datos)
+4. [Uso y Ejecución](#uso-y-ejecución)
+5. [Datos y Fuentes](#datos-y-fuentes)
+6. [Metodología](#metodología)
+7. [Resultados y Conclusiones](#resultados-y-conclusiones)
+8. [Contribución y Colaboración](#contribución-y-colaboración)
+9. [Licencia](#licencia)
 
 # **CONSINGNA:**
 
@@ -14,7 +24,7 @@
 
 # **Propuesta de trabajo (requerimientos de aprobación)**
 # **TAREAS REALIZADAS:**
-#  <h3>**1. Ingesta de datos**</h3>
+# <h3>**1. Ingesta de datos**</h3>
 
 - Las tareas del ETL se separaron en dos notebooks por comodidad de procesamiento.
 - La carga de datos se desarrolló en el notebook: **`1. ExtractData.`**
@@ -108,13 +118,7 @@
 - Por este motivo el modelo de basará fundamentalmente en las caracterísiticas de los juegos: géneros, especificaciones y tags.
 
 # <h3>**8. ML**</h3>
-    - Tomando los datos
-
-5. ML
-6. EDA y Entrenamiento
-7. Modelo
-8. Infraestructura para la puesta en marcha y nuevos datos
-9. Modelo usandose en una app
-
-
-d
+- Se elaboró el cálculo de la matriz del coseno utilizando los valores resultatntes de combinar **`genres`**, **`specs`** y **`tags`** en **`combined`**.
+- Como puede haber varios juegos con igual puntaje según el criterio de la matriz del coseno, decido ordenarlos por el posiive_ratio resultante del NLP.
+- Se procedió a realizar el depoloy.
+- Se muestra a continuación los resultados de las funciones y el modelo en Render.
