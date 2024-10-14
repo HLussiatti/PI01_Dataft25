@@ -62,11 +62,11 @@ def recommend_games(item_id, n_recommendations):
     game_indices = [i[0] for i in sim_scores[:n_recommendations]]
     game_sim_scores = [i[1] for i in sim_scores]
     
-    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet', columns=['title','item_id','genres','specs','tags_new','positive_ratio'])
+    df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_postEDA.parquet', columns=['item_id', 'title', 'positive_ratio'])
     df_steam_games.reset_index(drop=True, inplace=True)
 
     # Retornar los juegos recomendados junto con los puntajes de similitud
-    recommended_games = df_steam_games.loc[df_steam_games.index.isin(game_indices), ['title','item_id','genres','specs','tags_new','positive_ratio']]
+    recommended_games = df_steam_games.loc[df_steam_games.index.isin(game_indices), ['item_id', 'title', 'positive_ratio']]
     recommended_games['similarity_score'] = game_sim_scores 
 
     # Como puede haber varios juegos con igual puntaje, decido ordenarlos por el posiive_ratio resultante del NLP

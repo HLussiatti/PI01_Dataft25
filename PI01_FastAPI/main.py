@@ -163,12 +163,6 @@ def read_recommend_games(item_id: int):
         Es el nombre del juego. 
     item_id:
         Es el id del juego.
-    genres:
-        Listado de géneros juego.
-    specs:
-        Especificaciones del juego.
-    tags_new:
-        Otras especificaciones adicionales del juego.
     positive_ratio:
         Proporción de Reviews clasificadas como Positivas por el algoritmo de NLP Transformers.    
     similarity_score:
