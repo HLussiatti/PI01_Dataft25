@@ -118,7 +118,9 @@
 - Por este motivo el modelo de basará fundamentalmente en las caracterísiticas de los juegos: géneros, especificaciones y tags.
 
 # <h3>**8. ML**</h3>
-- Se elaboró el cálculo de la matriz del coseno utilizando los valores resultatntes de combinar **`genres`**, **`specs`** y **`tags`** en **`combined`**.
-- Como puede haber varios juegos con igual puntaje según el criterio de la matriz del coseno, decido ordenarlos por el posiive_ratio resultante del NLP.
+- Se elaboró el cálculo de la **`cosine_similarity`**  utilizando los valores resultatntes de combinar **`genres`**, **`specs`** y **`tags`** en **`combined`**.
+- Como puede haber varios juegos con igual puntaje según el criterio de la matriz del coseno, decido ordenarlos por el **`posiive_ratio`** resultante del NLP.
 - Se procedió a realizar el depoloy.
 - Se muestra a continuación los resultados de las funciones y el modelo en Render.
+- Link del deployed **[API en Render](https://pi01-dataft25.onrender.com/docs)**
+- Resultados de todas las consultas:
