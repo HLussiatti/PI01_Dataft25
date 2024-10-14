@@ -6,7 +6,7 @@
 
 # <h1 align=center>**Sistema de recomendación de Juegos de Steam**</h1>
 
-# **CONSINGNA:**
+# **CONSIGNA:**
 
 - Steam pide que te encargues de crear un sistema de recomendación de videojuegos para usuarios.
 - Tener un MVP (Minimum Viable Product) para el cierre del proyecto! 
@@ -103,12 +103,13 @@
 
 - En primer luguar se elaboró el archivo de requirements.txt con las librerías mínimas necesarias para el funcionamiento de la API.
     - Si bien este archivo inicialmente se elaboró a partir del la creación de un entorno virtual, es mejor hacerlo manualmente utilizando sólo las librerías mínimas necesarias.   
-- Luego se creó una cuenta en Redener y se creó el siguiente entorno: https://pi01-dataft25.onrender.com/
+- Luego se creó una cuenta en Redener y se creó el siguiente entorno: https://pi01-dataft25.onrender.com/docs/
 - Se debieron adaptar las funciones creadas en el notbook **`"4. Funciones"`** para funcionar en Render.
     - Por ejemplo, render utiliza **`"/"`** en lugar de **`"\\"`**
     - Como la API parsea las URLs, se deben modificar algunas cosas:
         - Se utiliza año como "anio"
         - Se utilza la librería **`unquote`** para decodificar algunas entradas a las consulas, como por ejemplo, nombres de desarrolladores con espacios.
+        - No puede haber nulos a la salida sino no se convierten a json.
     - Se creó una función de eliminación de datos ya que ante muchas consultas consecutivas se caía Render.
 
 <p align="center">
@@ -119,6 +120,9 @@
 </p>
 <p align="center">
 <img src="./_src/Settings_render_3.PNG"  style="width:100%">
+</p>
+<p align="center">
+<img src="./_src/Settings_render_4.PNG"  style="width:100%">
 </p>
 
 
@@ -156,7 +160,7 @@
 <img src="./_src/Render_Request_Response_1.PNG"  style="width:100%">
 </p>
 
-# **9.2.  def userdata(user_id : str):**
+### **9.2.  def userdata(user_id : str):**
     
     Devuelve la cantidad de dinero gastado por el usuario, el porcentaje de recomendación en base a reviews.recommend y la cantidad de items que posee el usuario.
 
@@ -164,7 +168,7 @@
 <img src="./_src/Render_Request_Response_2.PNG"  style="width:100%">
 </p>
 
-# **9.3. def UserForGenre(genero : str ):** 
+### **9.3. def UserForGenre(genero : str ):** 
 
     Deuelve el Usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
 
@@ -172,7 +176,7 @@
 <img src="./_src/Render_Request_Response_3.PNG"  style="width:100%">
 </p>
 
-# **9.4. def best_developer_year(anio : int ):** 
+### **9.4. def best_developer_year(anio : int ):** 
 
     Devuelve el top 3 de desarrolladores con juegos más recomendados por usuarios para el año dado. (reviews.recommend = True y comentarios positivos).
 
@@ -180,24 +184,21 @@
 <img src="./_src/Render_Request_Response_4.PNG"  style="width:100%">
 </p>
 
-# **9.5. def developer_reviews_analysis( desarrolladora : str ):** 
+### **9.5. def developer_reviews_analysis( desarrolladora : str ):** 
     
     Devuelve un diccionario con el nombre del desarrollador como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
-
 
 <p align="center">
 <img src="./_src/Render_Request_Response_5.PNG"  style="width:100%">
 </p>
 
-# **9.6. def recommended_games( item_id: int ):** 
+### **9.6. def recommended_games( item_id: int ):** 
     
     Devuelve los 5 juegos recomendados ingresando el id de un juego ordenados por puntaje según matriz de similitud del coseno y la proporción de Reviews clasificadas como Positivas.
-
     
 <p align="center">
 <img src="./_src/Render_Request_Response_6.PNG"  style="width:100%">
 </p>
-
 
 
 # <h3>**Requisitos**</h3>
@@ -212,7 +213,7 @@
 
 
 # <h3>**Estructura del Proyecto**</h3>
-- `PI01_FastAPI/`: Contine los ejecutables y requiremetns para el deploy en Render.
+- `PI01_FastAPI/`: Contine los códigos funte .py y requiremetns para el deploy en Render.
 - `datasts/`: Contiene los archivos de datos.
 - `notebooks/`: Jupyter notebooks con el análisis.
 - `_src/`: Imágenes utilizadas en el Readme.
