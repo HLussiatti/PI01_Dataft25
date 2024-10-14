@@ -33,10 +33,10 @@
 
 
 # **TAREAS REALIZADAS:**
-# <h3>**1. Ingesta de datos**</h3>
+# <h3>**1. Ingesta de datos (ETL)**</h3>
 
 - Las tareas del ETL se separaron en dos notebooks por comodidad de procesamiento.
-- La carga de datos se desarrolló en el notebook: **`1. ExtractData.`**
+- La carga de datos se desarrolló en el notebook: **`1. (ETL) ExtractData`**
 - La ingesta se realizó desanidando los datos necesarios y tratando de optimizar la carga directa manejando los archivos como diccionarios y luego cargandolos en un DataFrame ya que no tenían la estructura json adecuada.
 - Los datos se guardaron en archivos del tipo parquet para lograr mayor compresión y poder consumirlos luego con mayor velocidad.
 - No se realizaron modificaciones a los datos en esta instancia salvo en el caso del campo **`"price"`** del archivo **`"steam_games"`** el cual requirió ser transformado a texto para poder ser guardado como parquet.
@@ -46,9 +46,9 @@
     - **`user_reviews.parquet y `**
     - **`users_items.parquet  `**
 
-# <h3>**2. Tratamiento de datos**</h3>
+# <h3>**2. Tratamiento de datos (ETL)**</h3>
 
-- En el notebook **`"2. TransformData".`** se llevó a cabo el análisis de duplicados, faltantes y outliers.
+- En el notebook **`"2. (ETL) TransformData".`** se llevó a cabo la mayor parte del análisis de duplicados, faltantes y outliers.
 - En esta instancia se hizo foco en las columnas necesarias para el desarrollo de las funciones y del modelo.
 - En principio, no se eliminaron datos nulos en cada columna si había datos en las demás. Luego se eliminan los nulos de las columnas que van a ser utilizadas en la API y el modelo ML.
 - Se realizaron las siguientes tareas:
@@ -59,10 +59,7 @@
         - Se creó una columna **`year`** para ser utilizada en la API.
         - Se renombró el campo **`id`** a **`item_id`** para que coincida con el resto del dataset, se verificaron nulos y se convirtió a entero.
         - Se eliminaron duplicados.
-        - Se realizó un análisis superficial de la columna **`developer`** pero su desnormalización es muy grande para esta instancia
-
-        INTENTAR SCRAPEAR LA INFO
-
+        - Se realizó un análisis de la columna **`developer`** pero su desnormalización es muy grande para ser normalizado en esta instancia, Se podría intentar hacer una nuevo scrapeo de la información. En el archivo **`sorted_developers.csv`** están todos los datos únicos ordenados alfabéticamente.
 
     - Sobre **`user_reviews`**:
         - La relación **`user_id - item_id`** no puede ser nula ni estar duplicada.
@@ -128,6 +125,7 @@
 
 # <h3>**7. EDA**</h3>
 
+- Gran parte del análisis de nulos y duplicados se hizo en el archivo **`2. (ETL) TransformData`** y no se repetirá en esta intancia.
 - Se realizaron los análisis univariado y multivariado más relevantes para el desarrollo del modelo ML y de las funciones.
     - Se eliminaron nulos en **`genres`**, **`specs`** y **`tags`**.
     - Se eliminaron algunos valores de género que no era descriptivos (Free To Play, Early Access)

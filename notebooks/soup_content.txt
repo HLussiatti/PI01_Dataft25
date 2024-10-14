@@ -5,16 +5,16 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <meta content="#171a21" name="theme-color"/>
   <title>
-   Alien Swarm on Steam
+   FSX: Steam Edition - F-16 Fighting Falcon Add-On on Steam
   </title>
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
   <link href="https://store.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=Rc2hpzg2Ex3T&amp;l=english" rel="stylesheet" type="text/css"/>
   <link href="https://store.akamai.steamstatic.com/public/shared/css/shared_global.css?v=cNFo_SNYcn7k&amp;l=english" rel="stylesheet" type="text/css"/>
   <link href="https://store.akamai.steamstatic.com/public/shared/css/buttons.css?v=CrrkDubPqLcq&amp;l=english" rel="stylesheet" type="text/css"/>
-  <link href="https://store.akamai.steamstatic.com/public/css/v6/store.css?v=Rzrd3uCdRpEQ&amp;l=english" rel="stylesheet" type="text/css"/>
+  <link href="https://store.akamai.steamstatic.com/public/css/v6/store.css?v=26NG5pt1XR-a&amp;l=english" rel="stylesheet" type="text/css"/>
   <link href="https://store.akamai.steamstatic.com/public/shared/css/user_reviews.css?v=HTzM1iGIPvco&amp;l=english" rel="stylesheet" type="text/css"/>
   <link href="https://store.akamai.steamstatic.com/public/shared/css/store_game_shared.css?v=13Id-j1GOlnv&amp;l=english" rel="stylesheet" type="text/css"/>
-  <link href="https://store.akamai.steamstatic.com/public/css/v6/game.css?v=eaemkyl0EcIt&amp;l=english" rel="stylesheet" type="text/css"/>
+  <link href="https://store.akamai.steamstatic.com/public/css/v6/game.css?v=qD1Ywz-OJhZx&amp;l=english" rel="stylesheet" type="text/css"/>
   <link href="https://store.akamai.steamstatic.com/public/css/v6/recommended.css?v=OQECwnXoVumu&amp;l=english" rel="stylesheet" type="text/css"/>
   <link href="https://store.akamai.steamstatic.com/public/css/v6/user_reviews_rewards.css?v=5-HJZa1v4wFP&amp;l=english" rel="stylesheet" type="text/css"/>
   <link href="https://store.akamai.steamstatic.com/public/shared/css/apphub.css?v=Gp-ifAqVr5lr&amp;l=english" rel="stylesheet" type="text/css"/>
@@ -57,7 +57,7 @@
   </script>
   <script src="https://store.akamai.steamstatic.com/public/javascript/app_tagging.js?v=RNngwPXUc1i7&amp;l=english" type="text/javascript">
   </script>
-  <script src="https://store.akamai.steamstatic.com/public/javascript/game.js?v=kW6pqOWhdlUE&amp;l=english" type="text/javascript">
+  <script src="https://store.akamai.steamstatic.com/public/javascript/game.js?v=vQDaoknYR65j&amp;l=english" type="text/javascript">
   </script>
   <script src="https://store.akamai.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.min.js?v=.-m414tR-pxn_" type="text/javascript">
   </script>
@@ -72,20 +72,21 @@
   <script src="https://store.akamai.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=pSvIAKtunfWg&amp;l=english" type="text/javascript">
   </script>
   <meta content="summary_large_image" name="twitter:card"/>
-  <meta content="Co-operative multiplayer game and complete code base available for free." name="Description"/>
+  <meta content="The F-16 Fighting Falcon, developed by Aerosoft, is a multirole jet fighter built by General Dynamics for the US Air Force, but famous as a default fighter for Air Forces around the World.In its lifetime, the lightweight fighter has been exported to more than 25 countries, boasting a record-breaking production of over 4,400 aircraft." name="Description"/>
+  <meta content="noindex" name="robots"/>
   <meta content="@steam" name="twitter:site">
-   <meta content="Alien Swarm on Steam" property="og:title"/>
-   <meta content="Alien Swarm on Steam" property="twitter:title"/>
+   <meta content="FSX: Steam Edition - F-16 Fighting Falcon Add-On on Steam" property="og:title"/>
+   <meta content="FSX: Steam Edition - F-16 Fighting Falcon Add-On on Steam" property="twitter:title"/>
    <meta content="website" property="og:type"/>
    <meta content="105386699540688" property="fb:app_id"/>
    <meta content="Steam" property="og:site"/>
-   <meta content="https://store.steampowered.com/app/630/Alien_Swarm/" property="og:url"/>
-   <meta content="Co-operative multiplayer game and complete code base available for free." property="og:description"/>
-   <meta content="Co-operative multiplayer game and complete code base available for free." property="twitter:description"/>
-   <link href="https://store.steampowered.com/app/630/Alien_Swarm/" rel="canonical"/>
-   <link href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/capsule_616x353.jpg?t=1677106170" rel="image_src"/>
-   <meta content="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/capsule_616x353.jpg?t=1677106170" property="og:image"/>
-   <meta content="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/capsule_616x353.jpg?t=1677106170" name="twitter:image">
+   <meta content="https://store.steampowered.com/app/343953/FSX_Steam_Edition__F16_Fighting_Falcon_AddOn/" property="og:url"/>
+   <meta content="The F-16 Fighting Falcon, developed by Aerosoft, is a multirole jet fighter built by General Dynamics for the US Air Force, but famous as a default fighter for Air Forces around the World.In its lifetime, the lightweight fighter has been exported to more than 25 countries, boasting a record-breaking production of over 4,400 aircraft." property="og:description"/>
+   <meta content="The F-16 Fighting Falcon, developed by Aerosoft, is a multirole jet fighter built by General Dynamics for the US Air Force, but famous as a default fighter for Air Forces around the World.In its lifetime, the lightweight fighter has been exported to more than 25 countries, boasting a record-breaking production of over 4,400 aircraft." property="twitter:description"/>
+   <link href="https://store.steampowered.com/app/343953/FSX_Steam_Edition__F16_Fighting_Falcon_AddOn/" rel="canonical"/>
+   <link href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/capsule_616x353.jpg?t=1673967404" rel="image_src"/>
+   <meta content="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/capsule_616x353.jpg?t=1673967404" property="og:image"/>
+   <meta content="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/capsule_616x353.jpg?t=1673967404" name="twitter:image">
    </meta>
   </meta>
  </head>
@@ -95,7 +96,7 @@
     <div class="responsive_page_menu" id="responsive_page_menu">
      <div class="mainmenu_contents">
       <div class="mainmenu_contents_items">
-       <a class="menuitem" href="https://store.steampowered.com/login/?redir=app%2F630%2FAlien_Swarm%2F&amp;redir_ssl=1&amp;snr=1_5_9__global-header">
+       <a class="menuitem" href="https://store.steampowered.com/login/?redir=app%2F343953%2FFSX_Steam_Edition__F16_Fighting_Falcon_AddOn%2F&amp;redir_ssl=1&amp;snr=1_5_9__global-header">
         Login
        </a>
        <a class="menuitem supernav supernav_active" data-tooltip-content=".submenu_Store" data-tooltip-type="selector" href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu">
@@ -284,7 +285,7 @@
           Install Steam
          </div>
         </a>
-        <a class="global_action_link" href="https://store.steampowered.com/login/?redir=app%2F630%2FAlien_Swarm%2F&amp;redir_ssl=1&amp;snr=1_5_9__global-header">
+        <a class="global_action_link" href="https://store.steampowered.com/login/?redir=app%2F343953%2FFSX_Steam_Edition__F16_Fighting_Falcon_AddOn%2F&amp;redir_ssl=1&amp;snr=1_5_9__global-header">
          login
         </a>
         |
@@ -399,19 +400,19 @@
     <div data-cart-banner-spot="1">
     </div>
     <div class="responsive_page_template_content" data-panel='{"autoFocus":true}' id="responsive_page_template_content" role="main">
-     <div data-broadcastuser='{"success":1,"bHideStoreBroadcast":false}' data-config='{"EUNIVERSE":1,"WEB_UNIVERSE":"public","LANGUAGE":"english","COUNTRY":"AR","MEDIA_CDN_COMMUNITY_URL":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/","MEDIA_CDN_URL":"https:\/\/cdn.akamai.steamstatic.com\/","VIDEO_CDN_URL":"https:\/\/video.akamai.steamstatic.com\/","COMMUNITY_CDN_URL":"https:\/\/community.akamai.steamstatic.com\/","COMMUNITY_CDN_ASSET_URL":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/assets\/","STORE_CDN_URL":"https:\/\/store.akamai.steamstatic.com\/","PUBLIC_SHARED_URL":"https:\/\/store.akamai.steamstatic.com\/public\/shared\/","COMMUNITY_BASE_URL":"https:\/\/steamcommunity.com\/","CHAT_BASE_URL":"https:\/\/steamcommunity.com\/","STORE_BASE_URL":"https:\/\/store.steampowered.com\/","STORE_CHECKOUT_BASE_URL":"https:\/\/checkout.steampowered.com\/","IMG_URL":"https:\/\/store.akamai.steamstatic.com\/public\/images\/","STEAMTV_BASE_URL":"https:\/\/steam.tv\/","HELP_BASE_URL":"https:\/\/help.steampowered.com\/","PARTNER_BASE_URL":"https:\/\/partner.steamgames.com\/","STATS_BASE_URL":"https:\/\/partner.steampowered.com\/","INTERNAL_STATS_BASE_URL":"https:\/\/steamstats.valve.org\/","IN_CLIENT":false,"USE_POPUPS":false,"STORE_ICON_BASE_URL":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/","WEBAPI_BASE_URL":"https:\/\/api.steampowered.com\/","TOKEN_URL":"https:\/\/store.steampowered.com\/\/chat\/clientjstoken","BUILD_TIMESTAMP":1728350492,"PAGE_TIMESTAMP":1728425826,"IN_TENFOOT":false,"IN_GAMEPADUI":false,"IN_CHROMEOS":false,"IN_MOBILE_WEBVIEW":false,"PLATFORM":"unknown","BASE_URL_STORE_CDN_ASSETS":"https:\/\/cdn.akamai.steamstatic.com\/store\/","EREALM":1,"LOGIN_BASE_URL":"https:\/\/login.steampowered.com\/","AVATAR_BASE_URL":"https:\/\/avatars.akamai.steamstatic.com\/","FROM_WEB":true,"WEBSITE_ID":"Store","BASE_URL_SHARED_CDN":"https:\/\/shared.akamai.steamstatic.com\/","CLAN_CDN_ASSET_URL":"https:\/\/clan.akamai.steamstatic.com\/","SNR":"1_5_9_"}' data-store_user_config='{"webapi_token":"","shoppingcart":null,"originating_navdata":{"domain":"store.steampowered.com","controller":"direct-navigation","method":"","submethod":"","feature":"","depth":0,"countrycode":"","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":true,"is_utm":false}}' data-userinfo='{"logged_in":false,"country_code":"AR"}' id="application_config" style="display: none;">
+     <div data-broadcastuser='{"success":1,"bHideStoreBroadcast":false}' data-config='{"EUNIVERSE":1,"WEB_UNIVERSE":"public","LANGUAGE":"english","COUNTRY":"AR","MEDIA_CDN_COMMUNITY_URL":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/","MEDIA_CDN_URL":"https:\/\/cdn.akamai.steamstatic.com\/","VIDEO_CDN_URL":"https:\/\/video.akamai.steamstatic.com\/","COMMUNITY_CDN_URL":"https:\/\/community.akamai.steamstatic.com\/","COMMUNITY_CDN_ASSET_URL":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/assets\/","STORE_CDN_URL":"https:\/\/store.akamai.steamstatic.com\/","PUBLIC_SHARED_URL":"https:\/\/store.akamai.steamstatic.com\/public\/shared\/","COMMUNITY_BASE_URL":"https:\/\/steamcommunity.com\/","CHAT_BASE_URL":"https:\/\/steamcommunity.com\/","STORE_BASE_URL":"https:\/\/store.steampowered.com\/","STORE_CHECKOUT_BASE_URL":"https:\/\/checkout.steampowered.com\/","IMG_URL":"https:\/\/store.akamai.steamstatic.com\/public\/images\/","STEAMTV_BASE_URL":"https:\/\/steam.tv\/","HELP_BASE_URL":"https:\/\/help.steampowered.com\/","PARTNER_BASE_URL":"https:\/\/partner.steamgames.com\/","STATS_BASE_URL":"https:\/\/partner.steampowered.com\/","INTERNAL_STATS_BASE_URL":"https:\/\/steamstats.valve.org\/","IN_CLIENT":false,"USE_POPUPS":false,"STORE_ICON_BASE_URL":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/","WEBAPI_BASE_URL":"https:\/\/api.steampowered.com\/","TOKEN_URL":"https:\/\/store.steampowered.com\/\/chat\/clientjstoken","BUILD_TIMESTAMP":1728930353,"PAGE_TIMESTAMP":1728932213,"IN_TENFOOT":false,"IN_GAMEPADUI":false,"IN_CHROMEOS":false,"IN_MOBILE_WEBVIEW":false,"PLATFORM":"unknown","BASE_URL_STORE_CDN_ASSETS":"https:\/\/cdn.akamai.steamstatic.com\/store\/","EREALM":1,"LOGIN_BASE_URL":"https:\/\/login.steampowered.com\/","AVATAR_BASE_URL":"https:\/\/avatars.akamai.steamstatic.com\/","FROM_WEB":true,"WEBSITE_ID":"Store","BASE_URL_SHARED_CDN":"https:\/\/shared.akamai.steamstatic.com\/","CLAN_CDN_ASSET_URL":"https:\/\/clan.akamai.steamstatic.com\/","SNR":"1_5_9_"}' data-store_page_asset_url='"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/%s?t=1673967404"' data-store_user_config='{"webapi_token":"","shoppingcart":null,"originating_navdata":{"domain":"store.steampowered.com","controller":"direct-navigation","method":"","submethod":"","feature":"","depth":0,"countrycode":"","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":true,"is_utm":false}}' data-userinfo='{"logged_in":false,"country_code":"AR"}' id="application_config" style="display: none;">
      </div>
      <div id="application_root">
      </div>
      <script>
       window.g_wapit="";
      </script>
-     <link href="https://store.akamai.steamstatic.com/public/css/applications/store/main.css?v=EKrrSksyanSO&amp;l=english" rel="stylesheet" type="text/css"/>
-     <script src="https://store.akamai.steamstatic.com/public/javascript/applications/store/manifest.js?v=uZ4PiYdLRxXG&amp;l=english" type="text/javascript">
+     <link href="https://store.akamai.steamstatic.com/public/css/applications/store/main.css?v=XADiTp40FRw-&amp;l=english" rel="stylesheet" type="text/css"/>
+     <script src="https://store.akamai.steamstatic.com/public/javascript/applications/store/manifest.js?v=W-haZutzEqgz&amp;l=english" type="text/javascript">
      </script>
      <script src="https://store.akamai.steamstatic.com/public/javascript/applications/store/libraries~b28b7af69.js?v=T0UG9me55G-1&amp;l=english" type="text/javascript">
      </script>
-     <script src="https://store.akamai.steamstatic.com/public/javascript/applications/store/main.js?v=0jsyL00G2MmI&amp;l=english" type="text/javascript">
+     <script src="https://store.akamai.steamstatic.com/public/javascript/applications/store/main.js?v=MuBTmli-HFHX&amp;l=english" type="text/javascript">
      </script>
      <script type="text/javascript">
       var g_eDiscoveryQueueType = 0;
@@ -457,7 +458,7 @@
         
 				AddRightNavStickyPaddingOnTablet();
 		
-			var usability = InitUsabilityTracker( "https:\/\/store.steampowered.com\/app\/usabilitytracking\/630" );
+			var usability = InitUsabilityTracker( "https:\/\/store.steampowered.com\/app\/usabilitytracking\/343953" );
 		usability.ScheduleUpload();
 	
 		
@@ -466,10 +467,10 @@
 	
 	function OpenTagModal()
 	{
-		ShowAppTagModal( 630 );
+		ShowAppTagModal( 343953 );
 	}
      </script>
-     <div class="game_page_background game" data-miniprofile-appid="630" style="background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/page_bg_generated_v6b.jpg?t=1677106170');">
+     <div class="game_page_background game" data-miniprofile-appid="343953" style="background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/page_bg_generated_v6b.jpg?t=1673967404');">
       <div class="banner_open_in_steam">
        <div data-featuretarget="open-in-desktop-client">
        </div>
@@ -1039,7 +1040,7 @@
 						if( $J('#searchform').length > 0 )
 						{
 							// default search support where the web page includes the search edit control
-							EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_5_9_', 'AR', 1, 'english', g_rgUserPreferences, '25617953' );
+							EnableSearchSuggestions( $J('#searchform')[0].elements['term'], '1_5_9_', 'AR', 1, 'english', g_rgUserPreferences, '25714931' );
 						}
 						else
 						{
@@ -1069,8 +1070,8 @@
       </script>
       <script type="text/javascript">
        var g_AccountID = 0;
-	var g_sessionID = "95b36c9dac9da4a04f5a34e1";
-	var g_ServerTime = 1728425826;
+	var g_sessionID = "ed8aed9ef215a2c6a568cce3";
+	var g_ServerTime = 1728932213;
 	var g_bUseNewCartAPI = true;
 
 	$J( InitMiniprofileHovers( 'https%3A%2F%2Fstore.steampowered.com%2F' ) );
@@ -1089,11 +1090,7 @@
       <!-- create two column layout for Deck, Tablet sized screens -->
       <div class="tablet_grid" id="tabletGrid">
        <div class="page_content_ctn" itemscope="" itemtype="http://schema.org/Product">
-        <meta content="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/capsule_231x87.jpg?t=1677106170" itemprop="image"/>
-        <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" style="display: none;">
-         <meta content="USD" itemprop="priceCurrency"/>
-         <meta content="0.00" itemprop="price"/>
-        </div>
+        <meta content="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/capsule_231x87.jpg?t=1673967404" itemprop="image"/>
         <div class="page_title_area game_title_area page_content" data-gpnav="columns">
          <div class="breadcrumbs" data-panel='{"flow-children":"row"}'>
           <div class="blockbg">
@@ -1101,13 +1098,21 @@
             All Games
            </a>
            &gt;
-           <a href="https://store.steampowered.com/genre/Action/?snr=1_5_9__205">
-            Action Games
+           <a href="https://store.steampowered.com/genre/Simulation/?snr=1_5_9__205">
+            Simulation Games
            </a>
            &gt;
-           <a href="https://store.steampowered.com/app/630/?snr=1_5_9__205">
+           <a href="https://store.steampowered.com/app/314160/?snr=1_5_9__205">
+            Microsoft Flight Simulator X: Steam Edition
+           </a>
+           &gt;
+           <a href="https://store.steampowered.com/dlc/314160/?snr=1_5_9__205">
+            Downloadable Content
+           </a>
+           &gt;
+           <a href="https://store.steampowered.com/app/343953/?snr=1_5_9__205">
             <span itemprop="name">
-             Alien Swarm
+             FSX: Steam Edition - F-16 Fighting Falcon Add-On
             </span>
            </a>
           </div>
@@ -1117,19 +1122,19 @@
          <div class="apphub_HomeHeaderContent">
           <div class="apphub_HeaderStandardTop">
            <div class="apphub_OtherSiteInfo">
-            <a class="btnv6_blue_hoverfade btn_medium" href="https://steamcommunity.com/app/630">
+            <a class="btnv6_blue_hoverfade btn_medium" href="https://steamcommunity.com/app/314160">
              <span>
               Community Hub
              </span>
             </a>
            </div>
            <div class="apphub_AppIcon">
-            <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/630/67126b5081b423af53f5e88e8e81d91b15daa644.jpg"/>
+            <img src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/314160/dba4fedfc6365bb7cda9293a175df897df353411.jpg"/>
             <div class="overlay">
             </div>
            </div>
            <div class="apphub_AppName" id="appHubAppName">
-            Alien Swarm
+            FSX: Steam Edition - F-16 Fighting Falcon Add-On
            </div>
            <div style="clear: both">
            </div>
@@ -1146,79 +1151,72 @@
          </script>
          <div class="game_background_glow">
           <div class="responsive_page_header_img" data-panel='{"autoFocus":true,"focusable":true,"clickOnActivate":true}' style="display: none;">
-           <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/header.jpg?t=1677106170" style="width:100%;"/>
+           <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/header.jpg?t=1673967404" style="width:100%;"/>
           </div>
           <div class="block_content page_content" data-panel='{"flow-children":"column"}' id="game_highlights">
            <div class="rightcol" data-panel='{"flow-children":"column"}'>
             <div class="glance_ctn">
              <div class="game_header_image_ctn" id="gameHeaderImageCtn">
-              <img class="game_header_image_full" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/header.jpg?t=1677106170"/>
+              <img class="game_header_image_full" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/header.jpg?t=1673967404"/>
               <div class="apphub_AppName" id="appHubAppName_responsive" style="display: none;">
-               Alien Swarm
+               FSX: Steam Edition - F-16 Fighting Falcon Add-On
               </div>
               <div class="app_header_grid_container" data-panel='{"type":"PanelGroup"}' id="appHeaderGridContainer" style="display:none">
                <div class="grid_label">
                 Developer
                </div>
                <div class="grid_content">
-                <a href="https://store.steampowered.com/developer/valve?snr=1_5_9__400">
-                 Valve
+                <a href="https://store.steampowered.com/search/?developer=Aerosoft%20GmbH&amp;snr=1_5_9__400">
+                 Aerosoft GmbH
                 </a>
                </div>
                <div class="grid_label">
                 Publisher
                </div>
                <div class="grid_content">
-                <a href="https://store.steampowered.com/publisher/valve?snr=1_5_9__400">
-                 Valve
+                <a href="https://store.steampowered.com/publisher/dovetailgames?snr=1_5_9__400">
+                 Dovetail Games - Flight
                 </a>
                </div>
                <div class="grid_label grid_date">
                 Released
                </div>
                <div class="grid_content grid_date">
-                19 Jul, 2010
+                12 May, 2015
                </div>
               </div>
              </div>
-             <div class="game_description_snippet">
-              Co-operative multiplayer game and complete code base available for free.
+             <div class="glance_details" data-panel='{"type":"PanelGroup"}'>
+              <p>
+               This content requires the base game
+               <a href="https://store.steampowered.com/app/314160/">
+                Microsoft Flight Simulator X: Steam Edition
+               </a>
+               on Steam in order to play.
+              </p>
+              <a href="https://store.steampowered.com/app/314160/?snr=1_5_9__413">
+               <img border="0" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/314160/capsule_184x69.jpg?t=1667504069"/>
+              </a>
              </div>
              <div class="glance_ctn_responsive_left">
               <div class="user_reviews" id="userReviews">
-               <div class="user_reviews_summary_row" data-tooltip-html="84% of the 50 user reviews in the last 30 days are positive." onclick="window.location='#app_reviews_hash'" style="cursor: pointer;">
-                <div class="subtitle column">
-                 Recent Reviews:
-                </div>
-                <div class="summary column">
-                 <span class="game_review_summary positive">
-                  Very Positive
-                 </span>
-                 <span class="responsive_hidden">
-                  (50)
-                 </span>
-                 <span class="nonresponsive_hidden responsive_reviewdesc">
-                  - 84% of the 50 user reviews in the last 30 days are positive.
-                 </span>
-                </div>
-               </div>
-               <div class="user_reviews_summary_row" data-tooltip-html="94% of the 21,099 user reviews for this game are positive." itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;">
+               <div class="user_reviews_summary_row" data-tooltip-html="66% of the 59 user reviews for this game are positive." itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;">
                 <div class="subtitle column all">
                  All Reviews:
                 </div>
                 <div class="summary column">
-                 <span class="game_review_summary positive" itemprop="description">
-                  Very Positive
+                 <span class="game_review_summary mixed" itemprop="description">
+                  Mixed
                  </span>
                  <span class="responsive_hidden">
-                  (21,099)
+                  (59)
                  </span>
                  <span class="nonresponsive_hidden responsive_reviewdesc">
-                  - 94% of the 21,099 user reviews for this game are positive.
+                  - 66% of the 59 user reviews for this game are positive.
                  </span>
                  <!-- microdata -->
-                 <meta content="21099" itemprop="reviewCount"/>
-                 <meta content="9" itemprop="ratingValue"/>
+                 <meta content="59" itemprop="reviewCount"/>
+                 <meta content="6" itemprop="ratingValue"/>
                  <meta content="10" itemprop="bestRating"/>
                  <meta content="1" itemprop="worstRating"/>
                 </div>
@@ -1229,7 +1227,7 @@
                 Release Date:
                </div>
                <div class="date">
-                19 Jul, 2010
+                12 May, 2015
                </div>
               </div>
               <div class="dev_row">
@@ -1237,8 +1235,8 @@
                 Developer:
                </div>
                <div class="summary column" id="developers_list">
-                <a href="https://store.steampowered.com/developer/valve?snr=1_5_9__2000">
-                 Valve
+                <a href="https://store.steampowered.com/search/?developer=Aerosoft%20GmbH&amp;snr=1_5_9__2000">
+                 Aerosoft GmbH
                 </a>
                </div>
               </div>
@@ -1247,23 +1245,27 @@
                 Publisher:
                </div>
                <div class="summary column">
-                <a href="https://store.steampowered.com/publisher/valve?snr=1_5_9__2000">
-                 Valve
+                <a href="https://store.steampowered.com/publisher/dovetailgames?snr=1_5_9__2000">
+                 Dovetail Games - Flight
                 </a>
                </div>
               </div>
              </div>
              <div class="glance_ctn_responsive_right" data-panel='{"flow-children":"column"}' id="glanceCtnResponsiveRight">
-              <div class="glance_tags_ctn your_tags_ctn">
+              <!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+              <div class="responsive_block_header">
+               Tags
+              </div>
+              <div class="glance_tags_ctn popular_tags_ctn" data-panel='{"flow-children":"row"}'>
                <div class="glance_tags_label">
-                No tags entered yet
+                Popular user-defined tags for this product:
                </div>
-               <div class="glance_tags your_tags" data-appid="630">
-                <div class="app_tag add_button add_more" data-panel='{"focusable":true,"clickOnActivate":true}' onclick="ShowAppTagModal( 630 )" style="display: none;">
+               <div class="glance_tags popular_tags" data-appid="343953" data-panel='{"flow-children":"row"}'>
+                <a class="app_tag" href="https://store.steampowered.com/tags/en/Simulation/?snr=1_5_9__409" style="display: none;">
+                 Simulation
+                </a>
+                <div class="app_tag add_button" data-panel='{"focusable":true,"clickOnActivate":true}' onclick="ShowAppTagModal( 343953 )">
                  +
-                </div>
-                <div class="app_tag add_button add_your_own" data-panel='{"focusable":true,"clickOnActivate":true}' onclick="ShowAppTagModal( 630 )" style="">
-                 + Add your own tags
                 </div>
                </div>
               </div>
@@ -1276,29 +1278,13 @@
                  All Reviews:
                 </div>
                 <div class="summary column">
-                 <span class="game_review_summary positive">
-                  Very Positive
+                 <span class="game_review_summary mixed">
+                  Mixed
                  </span>
                  <span class="responsive_reviewdesc_short">
-                  (94% of 21,099)
+                  (66% of 59)
                   <span class="desc_short">
                    All Time
-                  </span>
-                 </span>
-                </div>
-               </div>
-               <div class="user_reviews_summary_row" data-tooltip-html="84% of the 50 user reviews in the last 30 days are positive." id="appReviewsRecent_responsive" onclick="window.location='#app_reviews_hash'" style="cursor: pointer;">
-                <div class="subtitle column">
-                 Recent Reviews:
-                </div>
-                <div class="summary column">
-                 <span class="game_review_summary positive">
-                  Very Positive
-                 </span>
-                 <span class="responsive_reviewdesc_short">
-                  (84% of 50)
-                  <span class="desc_short">
-                   Recent
                   </span>
                  </span>
                 </div>
@@ -1316,113 +1302,123 @@
                <div class="highlight_player_area_spacer">
                 <img src="https://store.akamai.steamstatic.com/public/images/game/game_highlight_image_spacer.gif"/>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_5ed4a9e439d1a0c8565fccfc0c1517c8e9d16782.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_1f967c0bbba0e7526c5a57215af88e137ec30261.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_5ed4a9e439d1a0c8565fccfc0c1517c8e9d16782.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_5ed4a9e439d1a0c8565fccfc0c1517c8e9d16782.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_1f967c0bbba0e7526c5a57215af88e137ec30261.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_1f967c0bbba0e7526c5a57215af88e137ec30261.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_3ff2a00e1a49ada20e867b9338e6e47572b046af.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_a563c66d332fd99843ee461c8c4a1e00324f36c0.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_3ff2a00e1a49ada20e867b9338e6e47572b046af.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_3ff2a00e1a49ada20e867b9338e6e47572b046af.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_a563c66d332fd99843ee461c8c4a1e00324f36c0.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_a563c66d332fd99843ee461c8c4a1e00324f36c0.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_7cb03cfc18380d42d28cae781328cebb40a3a983.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_59fcecdb9725daf467c5b9fee5c810525ac63aa2.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_7cb03cfc18380d42d28cae781328cebb40a3a983.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_7cb03cfc18380d42d28cae781328cebb40a3a983.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_59fcecdb9725daf467c5b9fee5c810525ac63aa2.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_59fcecdb9725daf467c5b9fee5c810525ac63aa2.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_5939e72b222a95288ad3ac6eb69b956c57f7df2e.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_c71475509ab00038cd0dafe487cd763df6594b40.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_5939e72b222a95288ad3ac6eb69b956c57f7df2e.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_5939e72b222a95288ad3ac6eb69b956c57f7df2e.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_c71475509ab00038cd0dafe487cd763df6594b40.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_c71475509ab00038cd0dafe487cd763df6594b40.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_c95b51026c6523796a6d9fe6ddbfd31558d04af5.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_01b70ba9f85e08994652960d0f355c6c9ba0bc73.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_c95b51026c6523796a6d9fe6ddbfd31558d04af5.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_c95b51026c6523796a6d9fe6ddbfd31558d04af5.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_01b70ba9f85e08994652960d0f355c6c9ba0bc73.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_01b70ba9f85e08994652960d0f355c6c9ba0bc73.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_dcb8eb8382e5a93b98107d8c5bc8a03458394da9.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_e96aa233197ef9baa9c5d18446316bbae23b121a.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_dcb8eb8382e5a93b98107d8c5bc8a03458394da9.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_dcb8eb8382e5a93b98107d8c5bc8a03458394da9.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_e96aa233197ef9baa9c5d18446316bbae23b121a.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_e96aa233197ef9baa9c5d18446316bbae23b121a.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_1f1d196ebb925cb93caf845e7e352e85542d9e76.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_99d39b04dbe7fa2ce7c23f7d42c4e5dfd83829e0.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_1f1d196ebb925cb93caf845e7e352e85542d9e76.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_1f1d196ebb925cb93caf845e7e352e85542d9e76.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_99d39b04dbe7fa2ce7c23f7d42c4e5dfd83829e0.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_99d39b04dbe7fa2ce7c23f7d42c4e5dfd83829e0.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_b39b5cef6ad3176e0f80e7509c227032a22967d8.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_be9b75d27d69156fe40e48f4e010364774ccaf97.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_b39b5cef6ad3176e0f80e7509c227032a22967d8.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_b39b5cef6ad3176e0f80e7509c227032a22967d8.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_be9b75d27d69156fe40e48f4e010364774ccaf97.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_be9b75d27d69156fe40e48f4e010364774ccaf97.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_18f754afc528d82d9c91c52227a3acb215505f34.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_435b14f578fb5caf4d9f4bcb6746e6cb1c9bf39e.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_18f754afc528d82d9c91c52227a3acb215505f34.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_18f754afc528d82d9c91c52227a3acb215505f34.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_435b14f578fb5caf4d9f4bcb6746e6cb1c9bf39e.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_435b14f578fb5caf4d9f4bcb6746e6cb1c9bf39e.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
-               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_af9de9ae848cd98b099b636e917e8bd550998d32.jpg" style="display: none;">
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_6dcd0655dea9e956148f443f1ebe781bb9c6a800.jpg" style="display: none;">
                 <div class="screenshot_holder">
-                 <a class="highlight_screenshot_link" data-screenshotid="ss_af9de9ae848cd98b099b636e917e8bd550998d32.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_af9de9ae848cd98b099b636e917e8bd550998d32.1920x1080.jpg?t=1677106170" rel="" target="_blank">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_6dcd0655dea9e956148f443f1ebe781bb9c6a800.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_6dcd0655dea9e956148f443f1ebe781bb9c6a800.1920x1080.jpg?t=1673967404" rel="" target="_blank">
+                  <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
+                 </a>
+                </div>
+               </div>
+               <div class="highlight_player_item highlight_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="highlight_screenshot_ss_285e37f31a2270ccf8af0a1905e0de466e6deb8b.jpg" style="display: none;">
+                <div class="screenshot_holder">
+                 <a class="highlight_screenshot_link" data-screenshotid="ss_285e37f31a2270ccf8af0a1905e0de466e6deb8b.jpg" href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_285e37f31a2270ccf8af0a1905e0de466e6deb8b.1920x1080.jpg?t=1673967404" rel="" target="_blank">
                   <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"/>
                  </a>
                 </div>
                </div>
                <script type="text/javascript">
-                var rgScreenshotURLs = {"ss_5ed4a9e439d1a0c8565fccfc0c1517c8e9d16782.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_5ed4a9e439d1a0c8565fccfc0c1517c8e9d16782_SIZE_.jpg?t=1677106170","ss_3ff2a00e1a49ada20e867b9338e6e47572b046af.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_3ff2a00e1a49ada20e867b9338e6e47572b046af_SIZE_.jpg?t=1677106170","ss_7cb03cfc18380d42d28cae781328cebb40a3a983.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_7cb03cfc18380d42d28cae781328cebb40a3a983_SIZE_.jpg?t=1677106170","ss_5939e72b222a95288ad3ac6eb69b956c57f7df2e.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_5939e72b222a95288ad3ac6eb69b956c57f7df2e_SIZE_.jpg?t=1677106170","ss_c95b51026c6523796a6d9fe6ddbfd31558d04af5.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_c95b51026c6523796a6d9fe6ddbfd31558d04af5_SIZE_.jpg?t=1677106170","ss_dcb8eb8382e5a93b98107d8c5bc8a03458394da9.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_dcb8eb8382e5a93b98107d8c5bc8a03458394da9_SIZE_.jpg?t=1677106170","ss_1f1d196ebb925cb93caf845e7e352e85542d9e76.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_1f1d196ebb925cb93caf845e7e352e85542d9e76_SIZE_.jpg?t=1677106170","ss_b39b5cef6ad3176e0f80e7509c227032a22967d8.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_b39b5cef6ad3176e0f80e7509c227032a22967d8_SIZE_.jpg?t=1677106170","ss_18f754afc528d82d9c91c52227a3acb215505f34.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_18f754afc528d82d9c91c52227a3acb215505f34_SIZE_.jpg?t=1677106170","ss_af9de9ae848cd98b099b636e917e8bd550998d32.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/630\/ss_af9de9ae848cd98b099b636e917e8bd550998d32_SIZE_.jpg?t=1677106170"};
+                var rgScreenshotURLs = {"ss_1f967c0bbba0e7526c5a57215af88e137ec30261.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_1f967c0bbba0e7526c5a57215af88e137ec30261_SIZE_.jpg?t=1673967404","ss_a563c66d332fd99843ee461c8c4a1e00324f36c0.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_a563c66d332fd99843ee461c8c4a1e00324f36c0_SIZE_.jpg?t=1673967404","ss_59fcecdb9725daf467c5b9fee5c810525ac63aa2.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_59fcecdb9725daf467c5b9fee5c810525ac63aa2_SIZE_.jpg?t=1673967404","ss_c71475509ab00038cd0dafe487cd763df6594b40.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_c71475509ab00038cd0dafe487cd763df6594b40_SIZE_.jpg?t=1673967404","ss_01b70ba9f85e08994652960d0f355c6c9ba0bc73.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_01b70ba9f85e08994652960d0f355c6c9ba0bc73_SIZE_.jpg?t=1673967404","ss_e96aa233197ef9baa9c5d18446316bbae23b121a.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_e96aa233197ef9baa9c5d18446316bbae23b121a_SIZE_.jpg?t=1673967404","ss_99d39b04dbe7fa2ce7c23f7d42c4e5dfd83829e0.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_99d39b04dbe7fa2ce7c23f7d42c4e5dfd83829e0_SIZE_.jpg?t=1673967404","ss_be9b75d27d69156fe40e48f4e010364774ccaf97.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_be9b75d27d69156fe40e48f4e010364774ccaf97_SIZE_.jpg?t=1673967404","ss_435b14f578fb5caf4d9f4bcb6746e6cb1c9bf39e.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_435b14f578fb5caf4d9f4bcb6746e6cb1c9bf39e_SIZE_.jpg?t=1673967404","ss_6dcd0655dea9e956148f443f1ebe781bb9c6a800.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_6dcd0655dea9e956148f443f1ebe781bb9c6a800_SIZE_.jpg?t=1673967404","ss_285e37f31a2270ccf8af0a1905e0de466e6deb8b.jpg":"https:\/\/shared.akamai.steamstatic.com\/store_item_assets\/steam\/apps\/343953\/ss_285e37f31a2270ccf8af0a1905e0de466e6deb8b_SIZE_.jpg?t=1673967404"};
                </script>
               </div>
               <div id="highlight_strip">
-               <div data-panel='{"maintainY":true,"flow-children":"row"}' id="highlight_strip_scroll" style="width: 1202px;">
+               <div data-panel='{"maintainY":true,"flow-children":"row"}' id="highlight_strip_scroll" style="width: 1322px;">
                 <div class="highlight_selector">
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_5ed4a9e439d1a0c8565fccfc0c1517c8e9d16782.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_5ed4a9e439d1a0c8565fccfc0c1517c8e9d16782.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_1f967c0bbba0e7526c5a57215af88e137ec30261.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_1f967c0bbba0e7526c5a57215af88e137ec30261.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_3ff2a00e1a49ada20e867b9338e6e47572b046af.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_3ff2a00e1a49ada20e867b9338e6e47572b046af.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_a563c66d332fd99843ee461c8c4a1e00324f36c0.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_a563c66d332fd99843ee461c8c4a1e00324f36c0.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_7cb03cfc18380d42d28cae781328cebb40a3a983.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_7cb03cfc18380d42d28cae781328cebb40a3a983.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_59fcecdb9725daf467c5b9fee5c810525ac63aa2.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_59fcecdb9725daf467c5b9fee5c810525ac63aa2.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_5939e72b222a95288ad3ac6eb69b956c57f7df2e.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_5939e72b222a95288ad3ac6eb69b956c57f7df2e.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_c71475509ab00038cd0dafe487cd763df6594b40.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_c71475509ab00038cd0dafe487cd763df6594b40.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_c95b51026c6523796a6d9fe6ddbfd31558d04af5.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_c95b51026c6523796a6d9fe6ddbfd31558d04af5.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_01b70ba9f85e08994652960d0f355c6c9ba0bc73.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_01b70ba9f85e08994652960d0f355c6c9ba0bc73.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_dcb8eb8382e5a93b98107d8c5bc8a03458394da9.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_dcb8eb8382e5a93b98107d8c5bc8a03458394da9.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_e96aa233197ef9baa9c5d18446316bbae23b121a.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_e96aa233197ef9baa9c5d18446316bbae23b121a.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_1f1d196ebb925cb93caf845e7e352e85542d9e76.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_1f1d196ebb925cb93caf845e7e352e85542d9e76.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_99d39b04dbe7fa2ce7c23f7d42c4e5dfd83829e0.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_99d39b04dbe7fa2ce7c23f7d42c4e5dfd83829e0.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_b39b5cef6ad3176e0f80e7509c227032a22967d8.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_b39b5cef6ad3176e0f80e7509c227032a22967d8.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_be9b75d27d69156fe40e48f4e010364774ccaf97.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_be9b75d27d69156fe40e48f4e010364774ccaf97.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_18f754afc528d82d9c91c52227a3acb215505f34.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_18f754afc528d82d9c91c52227a3acb215505f34.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_435b14f578fb5caf4d9f4bcb6746e6cb1c9bf39e.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_435b14f578fb5caf4d9f4bcb6746e6cb1c9bf39e.116x65.jpg?t=1673967404"/>
                 </div>
-                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_af9de9ae848cd98b099b636e917e8bd550998d32.jpg">
-                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/630/ss_af9de9ae848cd98b099b636e917e8bd550998d32.116x65.jpg?t=1677106170"/>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_6dcd0655dea9e956148f443f1ebe781bb9c6a800.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_6dcd0655dea9e956148f443f1ebe781bb9c6a800.116x65.jpg?t=1673967404"/>
+                </div>
+                <div class="highlight_strip_item highlight_strip_screenshot" data-panel='{"focusable":true,"clickOnActivate":true}' id="thumb_screenshot_ss_285e37f31a2270ccf8af0a1905e0de466e6deb8b.jpg">
+                 <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/343953/ss_285e37f31a2270ccf8af0a1905e0de466e6deb8b.116x65.jpg?t=1673967404"/>
                 </div>
                </div>
               </div>
@@ -1467,7 +1463,7 @@
 
                                                 var k_nElementWidth = 120;
                                                 var k_playerItemClassName = '.highlight_player_item';
-                                                var g_nStripWidth = 1200;
+                                                var g_nStripWidth = 1320;
                                                 var g_nMediaItems = player.m_elemPlayerArea.find( '.highlight_player_item' ).length;
                                                 var g_TouchEventStart = null;
 
@@ -1589,7 +1585,7 @@
           <div class="queue_ctn">
            <div class="queue_actions_ctn" id="queueActionsCtn">
             <p>
-             <a href="https://store.steampowered.com/login/?redir=app%2F630&amp;snr=1_5_9_">
+             <a href="https://store.steampowered.com/login/?redir=app%2F343953&amp;snr=1_5_9_">
               Sign in
              </a>
              to add this item to your wishlist, follow it, or mark it as ignored
@@ -1634,56 +1630,24 @@
               Single-player
              </div>
             </a>
-            <a class="game_area_details_specs_ctn" data-panel='{"flow-children":"column"}' href="https://store.steampowered.com/search/?category2=22&amp;snr=1_5_9__423">
+            <a class="game_area_details_specs_ctn" data-panel='{"flow-children":"column"}' href="https://store.steampowered.com/search/?category1=21&amp;snr=1_5_9__423">
              <div class="icon">
-              <img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_achievements.png"/>
+              <img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_dlc.png"/>
              </div>
              <div class="label">
-              Steam Achievements
+              Downloadable Content
              </div>
             </a>
-            <a class="game_area_details_specs_ctn" data-panel='{"flow-children":"column"}' href="https://store.steampowered.com/search/?category2=13&amp;snr=1_5_9__423">
+            <a class="game_area_details_specs_ctn" data-panel='{"flow-children":"column"}' href="https://store.steampowered.com/search/?category2=62&amp;snr=1_5_9__423">
              <div class="icon">
-              <img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_cc.png"/>
+              <img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_familysharing.png"/>
              </div>
              <div class="label">
-              Captions available
-             </div>
-            </a>
-            <a class="game_area_details_specs_ctn" data-panel='{"flow-children":"column"}' href="https://store.steampowered.com/search/?category2=23&amp;snr=1_5_9__423">
-             <div class="icon">
-              <img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_cloud.png"/>
-             </div>
-             <div class="label">
-              Steam Cloud
-             </div>
-            </a>
-            <a class="game_area_details_specs_ctn" data-panel='{"flow-children":"column"}' href="https://store.steampowered.com/search/?category2=15&amp;snr=1_5_9__423">
-             <div class="icon">
-              <img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_stats.png"/>
-             </div>
-             <div class="label">
-              Stats
-             </div>
-            </a>
-            <a class="game_area_details_specs_ctn" data-panel='{"flow-children":"column"}' href="https://store.steampowered.com/search/?category2=17&amp;snr=1_5_9__423">
-             <div class="icon">
-              <img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_editor.png"/>
-             </div>
-             <div class="label">
-              Includes level editor
-             </div>
-            </a>
-            <a class="game_area_details_specs_ctn" data-panel='{"flow-children":"column"}' href="https://store.steampowered.com/search/?category2=44&amp;snr=1_5_9__423">
-             <div class="icon">
-              <img class="category_icon" src="https://store.akamai.steamstatic.com/public/images/v6/ico/ico_remote_play_together.png"/>
-             </div>
-             <div class="label">
-              Remote Play Together
+              Family Sharing
              </div>
             </a>
            </div>
-           <div data-featuretarget="store-sidebar-controller-support-info" data-props='{"unAppID":630,"bFullXboxControllerSupport":false,"bPartialXboxControllerSupport":false,"bPS4ControllerSupport":false,"bPS4ControllerBTSupport":false,"bPS5ControllerSupport":false,"bPS5ControllerBTSupport":false,"bSteamInputAPISupport":false,"bNoKeyboardSupport":false,"bGamepadPreferred":false,"bControllerSupportWizardComplete":false,"bHasXbox":null,"bHasPS4":null,"bHasPS5":null,"bHasOther":false}'>
+           <div data-featuretarget="store-sidebar-controller-support-info" data-props='{"unAppID":343953,"bFullXboxControllerSupport":false,"bPartialXboxControllerSupport":true,"bPS4ControllerSupport":false,"bPS4ControllerBTSupport":false,"bPS5ControllerSupport":false,"bPS5ControllerBTSupport":false,"bSteamInputAPISupport":false,"bNoKeyboardSupport":false,"bGamepadPreferred":false,"bControllerSupportWizardComplete":false,"bHasXbox":null,"bHasPS4":null,"bHasPS5":null,"bHasOther":false}'>
            </div>
           </div>
           <div class="block responsive_apppage_details_right">
@@ -1732,37 +1696,6 @@
             </table>
            </div>
           </div>
-          <div class="responsive_banner_link" data-panel='{"focusable":true,"clickOnActivate":true}' id="bannerAchievements" onclick="window.location='https://steamcommunity.com/stats/630/achievements'" style="display: none">
-           <div class="responsive_banner_link_title responsive_chevron_right">
-            View Steam Achievements
-            <span class="responsive_banner_link_total">
-             (66)
-            </span>
-           </div>
-          </div>
-          <div class="block responsive_apppage_details_right" id="achievement_block">
-           <div class="block_title">
-            Includes 66 Steam Achievements
-           </div>
-           <div class="communitylink_achievement_images">
-            <div class="communitylink_achievement">
-             <img class="communitylink_achievement" src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/630/c30dc68448e219d61bf2b1b0d9ee98f9f0cce191.jpg" title="Close Encounters"/>
-            </div>
-            <div class="communitylink_achievement">
-             <img class="communitylink_achievement" src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/630/b2832cdbeadf7252c7155b5bcad4a4dca1be0888.jpg" title="Timor Station Speed Run"/>
-            </div>
-            <div class="communitylink_achievement">
-             <img class="communitylink_achievement" src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/apps/630/b2832cdbeadf7252c7155b5bcad4a4dca1be0888.jpg" title="Rydberg Reactor Speed Run"/>
-            </div>
-            <a class="communitylink_achievement communitylink_achivement_plusmore" href="https://steamcommunity.com/stats/630/achievements">
-             View
-             <br/>
-             all 66
-            </a>
-            <div style="clear: left;">
-            </div>
-           </div>
-          </div>
           <div class="block responsive_apppage_details_left game_details underlined_links" id="appDetailsUnderlinedLinks">
            <div class="block_content">
             <div class="block_content_inner">
@@ -1770,14 +1703,14 @@
               <b>
                Title:
               </b>
-              Alien Swarm
+              FSX: Steam Edition - F-16 Fighting Falcon Add-On
               <br/>
               <b>
                Genre:
               </b>
               <span data-panel='{"flow-children":"row"}'>
-               <a href="https://store.steampowered.com/genre/Action/?snr=1_5_9__408">
-                Action
+               <a href="https://store.steampowered.com/genre/Simulation/?snr=1_5_9__408">
+                Simulation
                </a>
               </span>
               <br/>
@@ -1785,39 +1718,40 @@
                <b>
                 Developer:
                </b>
-               <a href="https://store.steampowered.com/developer/valve?snr=1_5_9__408">
-                Valve
+               <a href="https://store.steampowered.com/search/?developer=Aerosoft%20GmbH&amp;snr=1_5_9__408">
+                Aerosoft GmbH
                </a>
               </div>
               <div class="dev_row">
                <b>
                 Publisher:
                </b>
-               <a href="https://store.steampowered.com/publisher/valve?snr=1_5_9__408">
-                Valve
+               <a href="https://store.steampowered.com/publisher/dovetailgames?snr=1_5_9__408">
+                Dovetail Games - Flight
                </a>
               </div>
               <b>
                Release Date:
               </b>
-              19 Jul, 2010
+              12 May, 2015
               <br/>
              </div>
              <div class="details_block" style="padding-top: 14px;">
-              <a class="linkbar" href="https://steamcommunity.com/linkfilter/?u=http%3A%2F%2Fwww.alienswarm.com" rel="noreferrer noopener" target="_blank">
+              <a class="linkbar" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Flive.dovetailgames.com%2F" rel="noreferrer noopener" target="_blank">
                Visit the website
                <img align="bottom" border="0" src="https://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif"/>
               </a>
-              <a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/?appids=630&amp;snr=1_5_9__408" rel="noreferrer" target="_blank">
+              <a class="linkbar" href="https://store.steampowered.com/manual/343953" rel="noreferrer" target="_blank">
+               View the manual
+               <img align="bottom" border="0" src="https://store.akamai.steamstatic.com/public/images/v5/ico_external_link.gif"/>
+              </a>
+              <a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/?appids=343953&amp;snr=1_5_9__408" rel="noreferrer" target="_blank">
                View update history
               </a>
-              <a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/app/630?snr=1_5_9__408" rel="noreferrer" target="_blank">
+              <a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/app/343953?snr=1_5_9__408" rel="noreferrer" target="_blank">
                Read related news
               </a>
-              <a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/app/630/discussions/" rel="noreferrer" target="_blank">
-               View discussions
-              </a>
-              <a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/actions/Search?T=ClanAccount&amp;K=Alien%20Swarm">
+              <a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/actions/Search?T=ClanAccount&amp;K=FSX%3A%20Steam%20Edition%20-%20F-16%20Fighting%20Falcon%20Add-On">
                Find Community Groups
               </a>
              </div>
@@ -1830,12 +1764,12 @@
              Share
             </span>
            </a>
-           <a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowEmbedWidget(630); return false;">
+           <a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowEmbedWidget(343953); return false;">
             <span>
              Embed
             </span>
            </a>
-           <a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" id="ReportAppBtn" onclick="ShowReportDialog(630)">
+           <a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" id="ReportAppBtn" onclick="ShowReportDialog(343953)">
             <span data-tooltip-text="Report this Product">
              <i class="ico16 reportv6">
              </i>
@@ -1850,72 +1784,50 @@
            </a>
           </div>
           <div id="reportBtn" style="display:none;">
-           <a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(630)">
+           <a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(343953)">
             <span>
              <img src="https://store.akamai.steamstatic.com/public/shared/images/icon_report.svg"/>
             </span>
            </a>
           </div>
-          <div class="block responsive_apppage_reviewblock" id="apppage_metacritic_block">
-           <div id="game_area_metascore">
-            <div class="score high">
-             77
-            </div>
-            <div class="logo">
-            </div>
-            <div class="wordmark">
-             <div class="metacritic">
-              metacritic
-             </div>
-             <div id="game_area_metalink">
-              <a href="https://www.metacritic.com/game/pc/alien-swarm?ftag=MCD-06-10aaa1f" target="_blank">
-               Read Critic Reviews
-              </a>
-              <img align="bottom" border="0" src="https://store.akamai.steamstatic.com/public/images/ico/iconExternalLink.gif"/>
-             </div>
-            </div>
-           </div>
-           <div style="clear: both">
-           </div>
-          </div>
          </div>
          <!-- End Right Column -->
          <div class="leftcol game_description_column" data-panel='{"flow-children":"column"}'>
           <div class="game_area_purchase" id="game_area_purchase">
+           <div id="purchase_note">
+            <div class="notice_box_top">
+            </div>
+            <div class="notice_box_content">
+             <b>
+              Notice:
+             </b>
+             FSX: Steam Edition - F-16 Fighting Falcon Add-On is no longer available on the Steam store.
+            </div>
+            <div class="notice_box_bottom">
+            </div>
+           </div>
+           <div class="game_area_bubble game_area_dlc_bubble">
+            <div class="content">
+             <h1>
+              Downloadable Content
+             </h1>
+             <p>
+              This content requires the base game
+              <a href="https://store.steampowered.com/app/314160/">
+               Microsoft Flight Simulator X: Steam Edition
+              </a>
+              on Steam in order to play.
+             </p>
+            </div>
+           </div>
            <!--[if lte IE 7]>
 <style type="text/css">
 .game_area_purchase_game_dropdown_right_panel .btn_addtocart { float: none; }
 </style>
 <![endif]-->
-           <div class="game_area_purchase_game">
-            <div class="game_area_purchase_platform">
-             <span class="platform_img win">
-             </span>
-            </div>
-            <h1>
-             Play Alien Swarm
-            </h1>
-            <p>
-             Free Game
-            </p>
-            <div class="game_purchase_action">
-             <div class="game_purchase_action_bg">
-              <div class="game_purchase_price price">
-               Free
-              </div>
-              <div class="btn_addtocart" id="freeGameBtn">
-               <a class="btn_green_steamui btn_medium" href="javascript:ShowGotSteamModal('steam://run/630', &quot;Alien Swarm&quot;, 'Play this game now' )">
-                <span>
-                 Play Game
-                </span>
-               </a>
-              </div>
-             </div>
-            </div>
-           </div>
           </div>
           <!-- game_area_purchase -->
-          <div class="responsive_banner_link" data-panel='{"focusable":true,"clickOnActivate":true}' id="bannerCommunity" onclick="window.location='https://steamcommunity.com/app/630'" style="display: none">
+          <div class="responsive_banner_link" data-panel='{"focusable":true,"clickOnActivate":true}' id="bannerCommunity" onclick="window.location='https://steamcommunity.com/app/343953'" style="display: none">
            <div class="responsive_banner_link_title responsive_chevron_right">
             View Community Hub
            </div>
@@ -1929,52 +1841,107 @@
           <div class="game_page_autocollapse" data-panel='{"type":"PanelGroup"}' id="aboutThisGame" style="max-height: 850px;">
            <div class="game_area_description" id="game_area_description">
             <h2>
-             About This Game
+             About This Content
             </h2>
-            Alien Swarm is a game and Source SDK release from a group of talented designers at Valve who were hired from the Mod community.
+            The F-16 Fighting Falcon, developed by Aerosoft, is a multirole jet fighter built by General Dynamics for the US Air Force, but famous as a default fighter for Air Forces around the World.
             <br/>
-            Available free of charge, the game thrusts players into an epic bug hunt featuring a unique blend of co-op play and squad-level tactics. With your friends, form a squad of four distinct IAF Marine classes. Plan your attack using an unlockable arsenal of weapons with countless loadout configurations against a wide variety of aliens. Blaze your way through an overrun, off-world colony, eradicating the alien infestation in environments ranging from the icy planet's surface, to a subterranean lava-flooded mining facility.
             <br/>
-            Along with the game get the complete code base for Alien Swarm that features updates to the Source engine as well as the SDK. Alien Swarm adds 3rd person camera, depth of field, improved dynamic shadows and a wide variety of gameplay additions to the Source engine.
+            In its lifetime, the lightweight fighter has been exported to more than 25 countries, boasting a record-breaking production of over 4,400 aircraft. Apart from a serious jet fighter, the F-16 features superb manoeuvrability and power which allows vertical climbs, as well as unparalleled visibility from the frameless bubble canopy.
+            <br/>
+            <br/>
+            The F-16 Fighting Falcon for FSX: Steam Edition has been designed with realism in mind in the highest possible detail. The F-16 is a joy to fly and is capable of altitudes up to 50,000 feet and speeds exceeding Mach 1. With this extremely agile, yet easy to control, aircraft, you will soon be exploring FSX: Steam Edition like never before.
+            <br/>
+            <br/>
+            UPDATE 16/02/16
+            <br/>
+            <br/>
+            The F-16 Fighting Falcon for FSX: Steam Edition includes officially-licensed liveries for the following Royal Netherlands Airforce variants:
             <br/>
             <ul class="bb_ul">
              <li>
-              Tactical, 4 player co-op action game with a top-down perspective
+              F-16AM RNLAF, J-204, 323 Squadron, Leeuwarden AFB
               <br/>
              </li>
              <li>
-              Complete game code and mod tools
+              F-16AM RNLAF, J-876, Polly’s 65th, 322 Squadron, Leeuwarden AFB
               <br/>
              </li>
              <li>
-              Unlock persistent items by gaining levels
+              F-16AM RNLAF, J-055, 313 Squadron DEMO, Volkel AFB
               <br/>
              </li>
              <li>
-              Over 40 weapons and equipment with countless loadout configurations
-              <br/>
-             </li>
-             <li>
-              4 unique classes and 8 unique characters
-              <br/>
-             </li>
-             <li>
-              Matchmaking, Steam Cloud, Steam Stats
-              <br/>
-             </li>
-             <li>
-              64 achievements
-              <br/>
-             </li>
-             <li>
-              Tile-based map generation tool
-              <br/>
-             </li>
-             <li>
-              Powered by Source and Steam
-              <br/>
+              F-16AM Smokewinder
              </li>
             </ul>
+            <h2 class="bb_tag">
+             Features
+            </h2>
+            <ul class="bb_ul">
+             <li>
+              A, AM and C models
+              <br/>
+             </li>
+             <li>
+              General Electric F110-GE-100 and Pratt &amp; Whitney F100-P-220 engines
+              <br/>
+             </li>
+             <li>
+              F-16C Block 50/52 Current and A MLU cockpits
+              <br/>
+             </li>
+             <li>
+              20 different external models
+              <br/>
+             </li>
+             <li>
+              NOW INCLUDED: RNLAF liveries, including F-16AM RNLAF, J-204, 323 Squadron, Leeuwarden AFB; F-16AM RNLAF, J-876, Polly’s 65th, 322 Squadron, Leeuwarden AFB; F-16AM RNLAF, J-055, 313 Squadron DEMO, Volkel AFB; F-16AM Smokewinder
+              <br/>
+             </li>
+             <li>
+              20 different flight models
+              <br/>
+             </li>
+             <li>
+              External loads, including AIM-120 AAMRAAM, AIM-9 Sidewinder, smokewinder, AIM-2000 IRIS-T, GBU-12 Paveway II, AGM-88A HARM, external wing 370 tank, conformal fuselage tank, AN/ALQ-131 ECM pod, AN/ALQ-184 ECM pod, external fuselage tank 300, AN/AAQ-33 Sniper, AN/AAQ-28 Litening and AN/ASQ-213 HTS
+              <br/>
+             </li>
+             <li>
+              Integrated control panel and data entry display
+              <br/>
+             </li>
+             <li>
+              Air target radar with tracking options
+              <br/>
+             </li>
+             <li>
+              Navigation display including terrain display
+              <br/>
+             </li>
+             <li>
+              Stores management screens
+              <br/>
+             </li>
+             <li>
+              Realistic heads up display
+              <br/>
+             </li>
+             <li>
+              In-flight refuelling possible from every AI airliner
+              <br/>
+             </li>
+             <li>
+              Includes two demanding and realistic missions to test your skills
+              <br/>
+             </li>
+             <li>
+              Fully licensed by General Dynamics
+             </li>
+            </ul>
+            <br/>
+            <i>
+             Please note: this add-on focuses on flying the F-16 and none of the offensive and defensive systems are modelled, although the radar allows tracking of AI aircraft.
+            </i>
            </div>
           </div>
           <div class="game_page_autocollapse sys_req" style="max-height: 300px;">
@@ -1983,7 +1950,7 @@
            </h2>
            <div class="sysreq_contents">
             <div class="game_area_sys_req sysreq_content active" data-os="win">
-             <div class="game_area_sys_req_leftCol">
+             <div class="game_area_sys_req_full">
               <ul>
                <strong>
                 Minimum:
@@ -1994,95 +1961,63 @@
                  <strong>
                   OS *:
                  </strong>
-                 Windows® 7 / Vista / Vista64 / XP
+                 Windows® XP Service Pack 2 or later
                  <br/>
                 </li>
                 <li>
                  <strong>
                   Processor:
                  </strong>
-                 Pentium 4 3.0GHz
+                 2.0 Ghz or higher (single core)
                  <br/>
                 </li>
                 <li>
                  <strong>
                   Memory:
                  </strong>
-                 1 GB for XP / 2GB for Vista
+                 2 GB RAM
                  <br/>
                 </li>
                 <li>
                  <strong>
                   Graphics:
                  </strong>
-                 DirectX 9 compatible video card with 128 MB, Shader model 2.0. ATI X800, NVidia 6600 or better
+                 DirectX®9 compliant video card or greater, 256 MB video RAM or higher, Shader Model 1.1 or higher (Laptop versions of these chipsets may work but are not supported. Updates to your video and sound card drivers may be required)
                  <br/>
                 </li>
                 <li>
                  <strong>
-                  Hard Drive:
+                  DirectX:
                  </strong>
-                 At least 2.5 GB of free space
+                 Version 9.0c
                  <br/>
                 </li>
                 <li>
                  <strong>
-                  Sound:
+                  Network:
                  </strong>
-                 DirectX 9.0c compatible sound card
-                 <br/>
-                </li>
-               </ul>
-              </ul>
-             </div>
-             <div class="game_area_sys_req_rightCol">
-              <ul>
-               <strong>
-                Recommended:
-               </strong>
-               <br/>
-               <ul class="bb_ul">
-                <li>
-                 <strong>
-                  OS *:
-                 </strong>
-                 Windows® 7 / Vista / Vista64 / XP
+                 Broadband Internet connection
                  <br/>
                 </li>
                 <li>
                  <strong>
-                  Processor:
+                  Storage:
                  </strong>
-                 Intel core 2 duo 2.4GHz
+                 30 GB available space
                  <br/>
                 </li>
                 <li>
                  <strong>
-                  Memory:
+                  Sound Card:
                  </strong>
-                 1 GB for XP / 2GB for Vista
+                 Direct X 9.0c compatible
                  <br/>
                 </li>
                 <li>
                  <strong>
-                  Graphics:
+                  Additional Notes:
                  </strong>
-                 DirectX 9 compatible video card with Shader model 3.0. NVidia 7600, ATI X1600 or better
-                 <br/>
-                </li>
-                <li>
-                 <strong>
-                  Hard Drive:
-                 </strong>
-                 At least 2.5 GB of free space
-                 <br/>
-                </li>
-                <li>
-                 <strong>
-                  Sound:
-                 </strong>
-                 DirectX 9.0c compatible sound card
-                 <br/>
+                 Broadband internet connection required for multiplayer features
                 </li>
                </ul>
               </ul>
@@ -2121,26 +2056,9 @@
         </div>
         <div class="related_items_ctn">
          <div class="page_content game_description_column">
-          <div class="rightcol game_meta_data" id="responsive_apppage_reviewblock_ctn">
+          <div data-featuretarget="storeitems-carousel-dlc" data-props='{"title":"More DLC from this game","seeAllLink":"https://store.steampowered.com/dlc/314160/Microsoft_Flight_Simulator_X_Steam_Edition/?snr=1_5_9__more-dlc-from-base-game","appIDs":[364323,352186,352188,379577,556213,556221,491498,500232,536579,602801,677995,677998],"navKey":"more_dlcs_from_game"}'>
           </div>
-          <div class="steam_curators_block block responsive_apppage_reviewblock">
-           <div class="block_header">
-            <div class="right">
-             <a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=630&amp;snr=1_5_9__top-curators">
-              View all
-             </a>
-            </div>
-            <h2>
-             What Curators Say
-            </h2>
-            <div class="no_curators_followed">
-             359 Curators have reviewed this product. Click
-             <a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=630&amp;snr=1_5_9__top-curators">
-              here
-             </a>
-             to see them.
-            </div>
-           </div>
+          <div class="rightcol game_meta_data" id="responsive_apppage_reviewblock_ctn">
           </div>
          </div>
         </div>
@@ -2148,14 +2066,14 @@
          <div class="page_content">
           <div class="app_reviews_area" id="app_reviews_hash">
            <h2 class="user_reviews_header no_bottom_margin">
-            Customer reviews for Alien Swarm
+            Customer reviews for FSX: Steam Edition - F-16 Fighting Falcon Add-On
            </h2>
-           <input id="review_appid" type="hidden" value="630"/>
+           <input id="review_appid" type="hidden" value="343953"/>
            <input id="review_default_day_range" type="hidden" value="30"/>
            <input id="review_start_date" type="hidden" value="-1"/>
            <input id="review_end_date" type="hidden" value="-1"/>
-           <input id="review_summary_num_positive_reviews" type="hidden" value="20012"/>
-           <input id="review_summary_num_reviews" type="hidden" value="21099"/>
+           <input id="review_summary_num_positive_reviews" type="hidden" value="39"/>
+           <input id="review_summary_num_reviews" type="hidden" value="59"/>
            <div class="review_recent_events" id="review_recent_events_container">
            </div>
            <div class="collapsed" id="review_histograms_container">
@@ -2167,11 +2085,11 @@
                <div class="title">
                 Overall Reviews:
                </div>
-               <span class="game_review_summary positive" data-tooltip-html="94% of the 21,099 user reviews for this game are positive.">
-                Very Positive
+               <span class="game_review_summary mixed" data-tooltip-html="66% of the 59 user reviews for this game are positive.">
+                Mixed
                </span>
                <span>
-                (21,099 reviews)
+                (59 reviews)
                </span>
                <a class="tooltip" data-tooltip-text="Since this product is free, this summary includes all reviews.">
                 <img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark.png"/>
@@ -2191,15 +2109,8 @@
                <div class="title">
                 Recent Reviews:
                </div>
-               <span class="game_review_summary positive" data-tooltip-html="84% of the 50 user reviews in the last 30 days are positive.">
-                Very Positive
-               </span>
-               <span>
-                (50 reviews)
-               </span>
-               <a class="tooltip" data-tooltip-text="Since this product is free, this summary includes all reviews.">
-                <img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark.png"/>
-               </a>
+               <div class="summary_section">
+               </div>
               </div>
              </div>
              <div class="review_histogram">
@@ -2219,7 +2130,7 @@
                <label for="review_type_all">
                 All
                 <span class="user_reviews_count">
-                 (21,099)
+                 (59)
                 </span>
                </label>
                <br/>
@@ -2227,7 +2138,7 @@
                <label for="review_type_positive">
                 Positive
                 <span class="user_reviews_count">
-                 (20,012)
+                 (39)
                 </span>
                </label>
                <br/>
@@ -2235,7 +2146,7 @@
                <label for="review_type_negative">
                 Negative
                 <span class="user_reviews_count">
-                 (1,087)
+                 (20)
                 </span>
                </label>
               </div>
@@ -2251,7 +2162,7 @@
                <label for="purchase_type_all">
                 All
                 <span class="user_reviews_count">
-                 (21,099)
+                 (59)
                 </span>
                </label>
                <br/>
@@ -2259,7 +2170,7 @@
                <label for="purchase_type_steam">
                 Steam Purchasers
                 <span class="user_reviews_count">
-                 (302)
+                 (58)
                 </span>
                 <a class="tooltip" data-tooltip-text="These are reviews written by customers that purchased the game directly from Steam.">
                  <img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"/>
@@ -2270,7 +2181,7 @@
                <label for="purchase_type_non_steam">
                 Other
                 <span class="user_reviews_count">
-                 (20,797)
+                 (1)
                 </span>
                 <a class="tooltip" data-tooltip-text="These are reviews written by customers that did not purchase the game on Steam. (This may include legitimate sources such as other digital stores, retail stores, testing purposes, or press review purposes. Or, from inappropriate sources such as copies given in exchange for reviews.)">
                  <img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"/>
@@ -2289,7 +2200,7 @@
                <label for="review_language_all">
                 All Languages
                 <span class="user_reviews_count">
-                 (21,099)
+                 (59)
                 </span>
                </label>
                <br/>
@@ -2297,7 +2208,7 @@
                <label for="review_language_mine">
                 Your Languages
                 <span class="user_reviews_count">
-                 (10,026)
+                 (37)
                 </span>
                 <a class="tooltip" data-tooltip-html="Your preferences are currently set to show content authored in these languages: English.&lt;br&gt;&lt;br&gt; Click 'customize' below to modify your preferences.">
                  <img src="https://store.akamai.steamstatic.com/public/shared/images/ico/icon_questionmark_dark.png"/>
@@ -2343,57 +2254,6 @@
                 Exclude Specific Range (Select on graph above)
                </label>
                <br/>
-              </div>
-             </div>
-            </div>
-            <div class="user_reviews_filter_menu">
-             <div class="title">
-              Playtime
-             </div>
-             <div class="user_reviews_filter_menu_flyout">
-              <div class="user_reviews_filter_menu_flyout_content">
-               <div class="user_reviews_playtime_filter_explanation">
-                Filter reviews by the user's playtime when the review was written:
-               </div>
-               <input checked="" id="review_playtime_preset_0" name="review_playtime_preset" onchange="SelectPlaytimeFilterPreset( 0 )" type="radio" value="0"/>
-               <label for="review_playtime_preset_0">
-                No Minimum
-               </label>
-               <br/>
-               <input id="review_playtime_preset_1" name="review_playtime_preset" onchange="SelectPlaytimeFilterPreset( 1 )" type="radio" value="1"/>
-               <label for="review_playtime_preset_1">
-                Over 1 hour
-               </label>
-               <br/>
-               <input id="review_playtime_preset_10" name="review_playtime_preset" onchange="SelectPlaytimeFilterPreset( 10 )" type="radio" value="10"/>
-               <label for="review_playtime_preset_10">
-                Over 10 hours
-               </label>
-               <br/>
-               <div id="app_reviews_playtime_range_text">
-                <span id="app_reviews_playtime_range_text_min">
-                 No minimum
-                </span>
-                to
-                <span id="app_reviews_playtime_range_text_max">
-                 No maximum
-                </span>
-               </div>
-               <input id="app_reviews_playtime_range_min" type="hidden" value="0"/>
-               <input id="app_reviews_playtime_range_max" type="hidden" value="0"/>
-               <div id="app_reviews_playtime_slider">
-               </div>
-               <div class="user_reviews_playtime_type">
-                <input checked="" id="review_playtime_type_all" name="review_playtime_type" onchange="ShowFilteredReviews()" type="radio" value="all"/>
-                <label for="review_playtime_type_all">
-                 Played across all devices
-                </label>
-                <br/>
-                <input id="review_playtime_type_deck" name="review_playtime_type" onchange="ShowFilteredReviews()" type="radio" value="deck"/>
-                <label for="review_playtime_type_deck">
-                 Played mostly on Steam Deck
-                </label>
-               </div>
               </div>
              </div>
             </div>
@@ -2557,18 +2417,6 @@
              </div>
              <div style="clear:left;">
              </div>
-             <div class="view_all_reviews_btn leftcol" id="ViewAllReviewssummary">
-              <div class="review_box">
-               <div class="noReviewsYetTitle">
-                There are no more reviews that match the filters set above
-               </div>
-               <div class="noReviewsYetSub">
-                Adjust the filters above to see other reviews
-               </div>
-               <div style="clear: left; height: 40px;">
-               </div>
-              </div>
-             </div>
              <div style="clear: both">
              </div>
             </div>
@@ -2630,10 +2478,10 @@
         Enter up to 375 characters to add a description to your widget:
        </p>
        <div class="app_embed_dialog_description">
-        <textarea maxlength="375" name="w_text" placeholder="Co-operative multiplayer game and complete code base available for free."></textarea>
+        <textarea maxlength="375" name="w_text" placeholder="The F-16 Fighting Falcon, developed by Aerosoft, is a multirole jet fighter built by General Dynamics for the US Air Force, but famous as a default fighter for Air Forces around the World.In its lifetime, the lightweight fighter has been exported to more than 25 countries, boasting a record-breaking production of over 4,400 aircraft."></textarea>
        </div>
        <div class="buttoncontainer">
-        <a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="CreateWidget(630); return false;">
+        <a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="CreateWidget(343953); return false;">
          <span>
           Create widget
          </span>
@@ -2651,13 +2499,13 @@
      </div>
      <div id="ShareModal" style="display: none">
       <div class="share share_dialog">
-       <a href="https://store.steampowered.com/share/facebook/app/630" rel="" target="_blank" title="Share on Facebook">
+       <a href="https://store.steampowered.com/share/facebook/app/343953" rel="" target="_blank" title="Share on Facebook">
         <img src="https://store.akamai.steamstatic.com/public/images/social/facebook_large.png"/>
        </a>
-       <a href="https://store.steampowered.com/share/twitter/app/630" rel="" target="_blank" title="Share on X (Twitter)">
+       <a href="https://store.steampowered.com/share/twitter/app/343953" rel="" target="_blank" title="Share on X (Twitter)">
         <img src="https://store.akamai.steamstatic.com/public/images/social/twitter_large.png"/>
        </a>
-       <a href="https://store.steampowered.com/share/reddit/app/630" rel="" target="_blank" title="Share on Reddit">
+       <a href="https://store.steampowered.com/share/reddit/app/343953" rel="" target="_blank" title="Share on Reddit">
         <img src="https://store.akamai.steamstatic.com/public/images/social/reddit_large.png"/>
        </a>
        <div class="share_dialog_content">
@@ -2665,7 +2513,7 @@
          Link to the game's store page
         </label>
         <textarea class="share_dialog_value" id="shareDialogLinkStoreLink" onclick="ShareDialogCopyToClipboard();" readonly=""></textarea>
-        https://store.steampowered.com/app/630/Alien_Swarm/
+        https://store.steampowered.com/app/343953/FSX_Steam_Edition__F16_Fighting_Falcon_AddOn/
        </div>
        <div class="share_dialog_result" id="shareDialogResult">
        </div>
@@ -2693,7 +2541,7 @@
          Sign in to add your own tags to this product.
         </p>
         <p>
-         <a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/630">
+         <a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/343953">
           <span>
            Sign In
           </span>
@@ -2706,13 +2554,13 @@
      </div>
      <script type="text/javascript">
       $J( function() {
-			InitAppTagModal( 630,
-				[],
+			InitAppTagModal( 343953,
+				[{"tagid":599,"name":"Simulation","count":28,"browseable":true}],
 				[],
 				"1_5_9__410",
 				"1_5_9__411",
 				null,
-				false			);
+				true			);
 
 						if ( typeof GDynamicStore != 'undefined' )
 				GDynamicStore.FixupNamePortion();
