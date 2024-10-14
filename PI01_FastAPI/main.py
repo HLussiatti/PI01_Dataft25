@@ -174,5 +174,5 @@ def read_recommend_games(item_id: int):
     similarity_score:
         Score resultante de la matriz de similitud del coseno.
     """
-    result = recommend_games(item_id)
+    result = recommend_games(item_id, 5)
     return result

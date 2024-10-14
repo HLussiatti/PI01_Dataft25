@@ -102,8 +102,15 @@
         - Se utilza la librería **`unquote`** para decodificar algunas entradas a las consulas, como por ejemplo, nombres de desarrolladores con espacios.
     - Se creó una función de eliminación de datos ya que ante muchas consultas consecutivas se caía Render.
 
+<p align="center">
+<img src=".../_src/Settings_render_1.PNG"  height=300>
+<img src="../_src/Settings_render_2.PNG"  height=300>
+<img src="../_src/Settings_render_3.PNG"  height=300>
+</p>
+
 
 # <h3>**7. EDA**</h3>
+
 - Se realizaron los análisis univariado y multivariado más relevantes para el desarrollo del modelo ML y de las funciones.
     - Se eliminaron nulos en **`genres`**, **`specs`** y **`tags`**.
     - Se eliminaron algunos valores de género que no era descriptivos (Free To Play, Early Access)
@@ -118,9 +125,63 @@
 - Por este motivo el modelo de basará fundamentalmente en las caracterísiticas de los juegos: géneros, especificaciones y tags.
 
 # <h3>**8. ML**</h3>
+
 - Se elaboró el cálculo de la **`cosine_similarity`**  utilizando los valores resultatntes de combinar **`genres`**, **`specs`** y **`tags`** en **`combined`**.
 - Como puede haber varios juegos con igual puntaje según el criterio de la matriz del coseno, decido ordenarlos por el **`posiive_ratio`** resultante del NLP.
 - Se procedió a realizar el depoloy.
 - Se muestra a continuación los resultados de las funciones y el modelo en Render.
 - Link del deployed **[API en Render](https://pi01-dataft25.onrender.com/docs)**
 - Resultados de todas las consultas:
+
+**- def developer(desarrollador : str) :**
+
+    Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
+
+<p align="center">
+<img src="../_src/Render_Request_Response_1.PNG"  height=300>
+</p>
+
+**- def userdata(user_id : str):**
+    
+    Debe devolver cantidad de dinero gastado por el usuario, el porcentaje de recomendación en base a reviews.recommend y cantidad de items.
+
+<p align="center">
+<img src="../_src/Render_Request_Response_2.PNG"  height=300>
+</p>
+
+**-def UserForGenre(genero : str ):** 
+
+    Debe devolver el usuario que acumula más horas jugadas para el género dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
+
+<p align="center">
+<img src="../_src/Render_Request_Response_3.PNG"  height=300>
+</p>
+
+**- def best_developer_year(anio : int ):** 
+
+    Devuelve el top 3 de desarrolladores con juegos MÁS recomendados por usuarios para el año dado. (reviews.recommend = True y comentarios positivos)
+
+<p align="center">
+<img src="../_src/Render_Request_Response_4.PNG"  height=300>
+</p>
+
+
+**- def developer_reviews_analysis( desarrolladora : str ):** 
+    
+    Según el desarrollador, se devuelve un diccionario con el nombre del desarrollador como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
+
+
+<p align="center">
+<img src="../_src/Render_Request_Response_5.PNG"  height=300>
+</p>
+
+
+**- def recommended_games( item_id: int ):** 
+    
+    Según el desarrollador, se devuelve un diccionario con el nombre del desarrollador como llave y una lista con la cantidad total de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo.
+
+    
+<p align="center">
+<img src="../_src/Render_Request_Response_6.jpg"  height=300>
+</p>
+
