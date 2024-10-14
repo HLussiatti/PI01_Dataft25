@@ -1,6 +1,5 @@
 # functions.py
 import pandas as pd
-import numpy as np
 import gc
 
 def release_resources(*dfs):
@@ -14,8 +13,7 @@ def release_resources(*dfs):
 
 
 def developer(desarrollador: str):
-    
-    #Levanto los datos
+    #Levanto los datos necesarios
     df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['developer','year','free'])
 
     # Verifico si el desarrollador existe en el DataFrame
@@ -55,7 +53,7 @@ def userdata(user_id: str):
 
     #Levanto los datos
     df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['item_id','price'])
-    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP.parquet', columns=['user_id','item_id','review','recommend'])
+    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP_Transformers.parquet', columns=['user_id','item_id','review','recommend'])
     df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet', columns=['user_id','item_id'])
 
     # Me fijo que exista user_id en df_user_items
@@ -121,114 +119,118 @@ def UserForGenre(genero: str):
     df_user_items = pd.read_parquet('../datasets/2. Depurado/users_items_depurado.parquet', columns=['user_id','item_id','playtime_forever']) 
 
     # Filtro los juegos por género - genre es un array dentro del DF.
-    juegos_genero = df_steam_games[df_steam_games['genres'].apply(lambda x: genero in x if x is not None else False)]
+    games_genres = df_steam_games[df_steam_games['genres'].apply(lambda x: genero in x if x is not None else False)]
 
     # Verifico que el género se encuentre en genres
-    if juegos_genero.empty:
+    if games_genres.empty:
         release_resources(df_steam_games,df_user_items)
         return f"No se encontraron juegos para el género '{genero}'."
 
     # Inner Join de los datos de juegos y tiempo jugado
-    user_play_time = pd.merge(df_user_items, juegos_genero[['item_id', 'year']], on='item_id', how='inner')
+    user_play_time = pd.merge(df_user_items, games_genres[['item_id', 'year']], on='item_id', how='inner')
 
-    # Sumo las horas jugadas por usuario y año
-    horas_jugadas = user_play_time.groupby(['user_id', 'year'])['playtime_forever'].sum().reset_index()
+    # Sumo los minutos jugados por usuario y año
+    play_time = user_play_time.groupby(['user_id', 'year'])['playtime_forever'].sum().reset_index()
+
+    # Convierto los minutos a horas
+    play_time['playtime_forever'] = play_time['playtime_forever'] / 60
 
     # Calculo el total de horas jugadas por cada usuario para el género
-    total_horas_por_usuario = horas_jugadas.groupby('user_id')['playtime_forever'].sum().reset_index()
+    total_user_play_time = play_time.groupby('user_id')['playtime_forever'].sum().reset_index()
 
     # Encontrar el usuario con más horas jugadas
-    mejor_usuario = total_horas_por_usuario.loc[total_horas_por_usuario['playtime_forever'].idxmax()]
+    max_total_user_play_time = total_user_play_time.loc[total_user_play_time['playtime_forever'].idxmax()]
 
     # Filtrar las horas jugadas por año para el mejor usuario
-    horas_por_año = horas_jugadas[horas_jugadas['user_id'] == mejor_usuario['user_id']]
+    play_time_by_year = play_time[play_time['user_id'] == max_total_user_play_time['user_id']]
 
     # Formatear el resultado
-    resultado = {
-        "Usuario con más horas jugadas para Género {}".format(genero): mejor_usuario['user_id'],
-        "Horas jugadas": [{"Año": int(year), "Horas": int(hours)} for year, hours in zip(horas_por_año['year'], horas_por_año['playtime_forever'])]
+    result = {
+        "Usuario con más horas jugadas para Género {}".format(genero): max_total_user_play_time['user_id'],
+        "Horas jugadas": [{"Año": int(year), "Horas": int(hours)} for year, hours in zip(play_time_by_year['year'], play_time_by_year['playtime_forever'])]
     }
 
     release_resources(df_steam_games,df_user_items)
-    return resultado
+    return result
 
 
 def best_developer_year(año: int):
     #Levanto los datos
     df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet', columns=['item_id','year','developer'])
-    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP.parquet', columns=['user_id','item_id','recommend','sentiment_value'])
+    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP_Transformers.parquet', columns=['user_id','item_id','recommend','sentiment_value'])
     
     # Filtrar los juegos por año
-    juegos_año = df_steam_games[df_steam_games['year'] == año]
+    games_years = df_steam_games[df_steam_games['year'] == año]
 
     # Verifico si hay juegos en el año dado
-    if juegos_año.empty:
+    if games_years.empty:
         release_resources(df_steam_games,df_reviews)
         return f"No se encontraron juegos para el año {año}."
 
     # Filtrar las reviews recomendación "True" y reseñas "Positivas" del NLP
-    reseñas_positivas = df_reviews[(df_reviews['recommend'] == True) & (df_reviews['sentiment_value'] == '2')]
+    positive_reviews = df_reviews[(df_reviews['recommend'] == True) & (df_reviews['sentiment_value'] == '2')]
 
-    # Verificar si hay reseñas positivas
-    if reseñas_positivas.empty:
+    # Verifico si hay reseñas positivas
+    if positive_reviews.empty:
         release_resources(df_steam_games,df_reviews)
         return f"No se encontraron reseñas positivas para el año {año}."
 
-    # Inner join de los DF con la columna item_id como id
-    juegos_reseñas = pd.merge(juegos_año, reseñas_positivas, on='item_id', how='inner')
+    # Left join de los DF con la columna item_id como id
+    games_reviews = pd.merge(games_years, positive_reviews, on='item_id', how='left')
 
-    # Verificar si hay reseñas después del merge
-    if juegos_reseñas.empty:
-        release_resources(df_steam_games,df_reviews)       
+    # Verifico si hay reseñas después del merge
+    if games_reviews.empty:
+        release_resources(df_steam_games,df_reviews)
         return f"No hay reseñas positivas para los juegos del año {año}."
 
     # Cuento la cantidad de recomendaciones positivas por desarrollador
-    recomendados_por_desarrollador = juegos_reseñas.groupby('developer').size().reset_index(name='count')
+    positive_reviews_by_developer = games_reviews.groupby('developer').size().reset_index(name='count')
 
     # Obtengo el top 3 desarrolladores (sin ordenar)
-    top_desarrolladores = recomendados_por_desarrollador.nlargest(3, 'count')
+    top_developers = positive_reviews_by_developer.nlargest(3, 'count')
 
     # Formatear el resultado en el formato deseado
-    resultado = []
-    for idx, row in enumerate(top_desarrolladores.itertuples(), start=1):
+    result = []
+    for idx, row in enumerate(top_developers.itertuples(), start=1):
         puesto = f"Puesto {idx}"
-        resultado.append({puesto: row.developer})
-    
-    release_resources(df_steam_games,df_reviews)    
-    return resultado
+        result.append({puesto: row.developer})
+
+    release_resources(df_steam_games,df_reviews)
+    return result
 
 
 def developer_reviews_analysis(desarrolladora: str):
 
     #Levanto los datos
     df_steam_games = pd.read_parquet('../datasets/2. Depurado/steam_games_depurado.parquet',columns=['item_id','developer'])
-    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP.parquet',columns=['item_id','sentiment_value'])
+    df_reviews = pd.read_parquet('../datasets/2. Depurado/user_reviews_NLP_Transformers.parquet',columns=['item_id','sentiment_value'])
     
     
     # Filtrar los juegos del desarrollador especificado. Por las dudas lo paso a minúsculas
-    juegos_desarrolladora = df_steam_games[df_steam_games['developer'].str.lower() == desarrolladora.lower()]
+    games_by_developer = df_steam_games[df_steam_games['developer'].str.lower() == desarrolladora.lower()]
     
     # Verifico que haya juegos para este desarrollador y sino devuelvo 0
-    if juegos_desarrolladora.empty:
+    if games_by_developer.empty:
         release_resources(df_steam_games,df_reviews) 
-        return {desarrolladora: {'Negative': 0, 'Positive': 0}}
+        return {desarrolladora: {'Negativos': 0, 'Positivos': 0}}
 
     # Obtener los item_ids de los juegos de la desarrolladora
-    item_ids = juegos_desarrolladora['item_id']
+    item_ids = games_by_developer['item_id']
 
     # Filtrar las reseñas relacionadas con esos juegos
-    reseñas_desarrolladora = df_reviews[df_reviews['item_id'].isin(item_ids)]
+    reviews_by_developer = df_reviews[df_reviews['item_id'].isin(item_ids)]
 
-    # Contar las reseñas clasificadas como positivas y negativas
-    total_positivas = reseñas_desarrolladora[reseñas_desarrolladora['sentiment_value'] == '2'].shape[0]
-    total_negativas = reseñas_desarrolladora[reseñas_desarrolladora['sentiment_value'] == '0'].shape[0]
+    # Contar las reseñas clasificadas como positivas y negativas resultantes del NLP
+    total_positives = reviews_by_developer[reviews_by_developer['sentiment_value'] == '2'].shape[0]
+    total_negatives = reviews_by_developer[reviews_by_developer['sentiment_value'] == '0'].shape[0]
 
     # Crear el diccionario de resultados
-    resultado = {
+    result = {
         desarrolladora: {
-            'Negative': int(total_negativas),
-            'Positive': int(total_positivas)
+            'Negativos': int(total_positives),
+            'Positivos': int(total_negatives)
         }
     }
+
     release_resources(df_steam_games,df_reviews) 
-    return resultado
+    return result

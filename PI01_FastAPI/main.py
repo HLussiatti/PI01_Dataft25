@@ -36,8 +36,8 @@ def read_userdata(user_id: str):
     el porcentaje de recomendación en base a reviews.recommend y cantidad de items.
     :param user_id: Es el identificador único del usuario. 
     """
-    resultado = userdata(unquote(user_id))
-    return resultado
+    result = userdata(unquote(user_id))
+    return result
 
 @app.get("/UserForGenre/{genero}")
 def read_UserForGenre(genero: str):
@@ -45,8 +45,8 @@ def read_UserForGenre(genero: str):
     Endpoint para obtener el usuario que acumula más horas jugadas para 
     el género dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
     """
-    resultado = UserForGenre(unquote(genero))
-    return resultado
+    result = UserForGenre(unquote(genero))
+    return result
 
 @app.get("/best_developer_year/{anio}" )
 def read_best_developer_year(anio: int):
@@ -54,8 +54,8 @@ def read_best_developer_year(anio: int):
     Endpoint para obtener el top 3 de desarrolladores con juegos MÁS recomendados 
     por usuarios para el año dado. (reviews.recommend = True y comentarios positivos).
     """
-    resultado = best_developer_year(anio)
-    return resultado
+    result = best_developer_year(anio)
+    return result
 
 @app.get("/developer_reviews_analysis/{desarrolladora}")
 def read_developer_reviews_analysis(desarrolladora: str):
@@ -64,5 +64,5 @@ def read_developer_reviews_analysis(desarrolladora: str):
     como llave y una lista con la cantidad total de registros de reseñas de 
     suarios que se encuentren categorizados con un análisis de sentimiento como valor positivo o negativo..
     """
-    resultado = developer_reviews_analysis(unquote(desarrolladora))
-    return resultado
+    result = developer_reviews_analysis(unquote(desarrolladora))
+    return result
